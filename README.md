@@ -12,6 +12,23 @@ Before you begin, ensure you have the following installed:
 - Node.js (Latest LTS version recommended)
 - npm (comes with Node.js)
 
+## Security Updates
+
+Before running the project, it's recommended to address potential security vulnerabilities:
+
+```bash
+# Step 1: Install dependencies
+npm install
+
+# Step 2: Run audit fix with force flag to update development dependencies
+npm audit fix --force
+
+# Step 3: Update Vite to latest version to resolve remaining vulnerabilities
+npm install vite@latest
+```
+
+These steps will ensure you're running with the most secure versions of the development dependencies.
+
 ## Getting Started
 
 Follow these steps to run the project locally:
@@ -448,6 +465,91 @@ VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    ```
 
 5. Deploy to your hosting provider of choice (e.g., Vercel, Netlify, etc.)
+
+## Vercel Deployment
+
+This project is configured for deployment on Vercel. Follow these steps to deploy:
+
+### Prerequisites
+
+1. Create a [Vercel account](https://vercel.com/signup) if you don't have one
+2. Install the Vercel CLI:
+   ```bash
+   npm install -g vercel
+   ```
+3. Log in to Vercel via CLI:
+   ```bash
+   vercel login
+   ```
+
+### Environment Variables
+
+Before deploying, set up these environment variables in your Vercel project settings:
+
+1. `VITE_SUPABASE_URL`: Your Supabase project URL
+2. `VITE_SUPABASE_ANON_KEY`: Your Supabase anonymous key
+
+These can be set in the Vercel dashboard under Project Settings > Environment Variables.
+
+### Deployment Steps
+
+1. **Option 1: Deploy via Vercel Dashboard**
+   - Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+   - Import your repository in the Vercel dashboard
+   - Vercel will automatically detect it as a Vite project
+   - Configure your environment variables
+   - Click Deploy
+
+2. **Option 2: Deploy via CLI**
+   ```bash
+   # First time deployment
+   vercel
+
+   # Subsequent deployments
+   vercel --prod
+   ```
+
+### Vercel Configuration
+
+The project includes a `vercel.json` configuration file with:
+- Build settings for Vite
+- Route configurations for SPA
+- Environment variable mappings
+
+### Post-Deployment
+
+1. **Verify your deployment**:
+   - Check the deployment URL provided by Vercel
+   - Test all major functionalities
+   - Verify environment variables are working
+
+2. **Set up custom domain** (optional):
+   - Go to your project settings in Vercel
+   - Navigate to the Domains section
+   - Add and configure your custom domain
+
+3. **Enable automatic deployments**:
+   - Vercel automatically deploys when you push to your main branch
+   - Configure branch deployments in your project settings
+
+### Troubleshooting
+
+If you encounter issues:
+
+1. **Build failures**:
+   - Check the build logs in Vercel dashboard
+   - Verify all dependencies are properly listed in package.json
+   - Ensure environment variables are correctly set
+
+2. **Runtime errors**:
+   - Check browser console for errors
+   - Verify API endpoints and environment variables
+   - Test the same build locally using `vercel dev`
+
+3. **Performance issues**:
+   - Use Vercel Analytics to identify problems
+   - Check for large bundle sizes in the build output
+   - Consider implementing lazy loading for routes
 
 ## License
 
