@@ -551,6 +551,16 @@ If you encounter issues:
    - Check for large bundle sizes in the build output
    - Consider implementing lazy loading for routes
 
+4. **Dependency conflicts**:
+   If you encounter Vite dependency conflicts (e.g., `ERESOLVE could not resolve`), try these steps:
+   - Check your `package.json` for Vite version compatibility
+   - Ensure Vite version matches peer dependency requirements
+   - If needed, downgrade Vite to v5.x using:
+     ```bash
+     npm install vite@^5.0.0
+     ```
+   - Remove any non-critical dev dependencies that might cause conflicts
+
 ## License
 
 © 2024 Ghana Chemical Society. All rights reserved.
