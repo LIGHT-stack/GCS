@@ -39,7 +39,11 @@ const programsData: Record<string, Program> = {
     title: 'Instrument Connect',
     description: 'A program connecting researchers with analytical instruments across institutions in Ghana, promoting resource sharing and collaborative research.',
     longDescription: 'Instrument Connect is a flagship program of the Ghana Chemical Society that addresses the challenge of limited access to sophisticated analytical instruments in research institutions across Ghana. By creating a network of shared instrumentation resources, we enable researchers to conduct advanced analytical work without the need for every institution to acquire expensive equipment. This program promotes collaboration, optimizes resource utilization, and accelerates scientific discovery.',
+<<<<<<< HEAD
     image: '/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png',
+=======
+    image: '/src/assets/07.jpg',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'blue',
     events: [
       {
@@ -64,7 +68,11 @@ const programsData: Record<string, Program> = {
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
     longDescription: 'The Expert View Podcast is a digital initiative that brings the insights and experiences of leading chemistry experts to a wider audience. Through in-depth interviews, we explore cutting-edge research, career journeys, educational pathways, and the societal impact of chemistry. The podcast serves as both an educational resource and a way to highlight the achievements of chemists from Ghana and beyond, inspiring the next generation of scientific talent.',
+<<<<<<< HEAD
     image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+=======
+    image: '/src/assets/08.png',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'orange',
     events: [
       {
@@ -89,7 +97,11 @@ const programsData: Record<string, Program> = {
     title: 'Time with the Researcher',
     description: 'Interactive sessions connecting students with established researchers to provide mentorship and career guidance.',
     longDescription: 'Time with the Researcher is a mentorship program designed to bridge the gap between established researchers and students. Through scheduled sessions, students gain insights into research methodologies, career pathways, and the day-to-day realities of a scientific career. The program helps demystify the research process, provides valuable networking opportunities, and inspires students to pursue careers in chemical sciences.',
+<<<<<<< HEAD
     image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+=======
+    image: '/src/assets/08.png',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'green',
     events: [
       {
@@ -114,7 +126,11 @@ const programsData: Record<string, Program> = {
     title: 'Analytical Instrument Workshop',
     description: 'Hands-on training on modern analytical chemistry instruments.',
     longDescription: 'The Analytical Instrument Workshop provides hands-on training on modern analytical chemistry instruments. Participants learn operational principles, sample preparation, data acquisition, and interpretation techniques for various instruments including HPLC, GC-MS, NMR, and more. These workshops equip chemists with practical skills essential for academic research and industrial applications.',
+<<<<<<< HEAD
     image: '/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png',
+=======
+    image: '/src/assets/07.jpg',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'purple',
     events: [
       {
@@ -139,7 +155,11 @@ const programsData: Record<string, Program> = {
     title: 'Annual Conference',
     description: 'The flagship annual gathering of chemists from Ghana and beyond, featuring presentations, posters, and networking opportunities.',
     longDescription: 'The Ghana Chemical Society Annual Conference is our premier event that brings together chemists, researchers, educators, and industry professionals from across Ghana and beyond. This multi-day conference features keynote presentations from leading experts, parallel sessions for research presentations, poster exhibitions, workshops, and ample networking opportunities. The conference serves as a platform for sharing cutting-edge research, discussing emerging trends in chemistry, and fostering collaborations that advance the chemical sciences in Ghana.',
+<<<<<<< HEAD
     image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+=======
+    image: '/src/assets/08.png',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'red',
     events: [
       {
@@ -164,7 +184,11 @@ const programsData: Record<string, Program> = {
     title: 'Chemistry Olympiad',
     description: 'A national competition for high school students to showcase their chemistry knowledge and skills.',
     longDescription: 'The Ghana Chemistry Olympiad is an annual competition designed to identify, nurture, and celebrate exceptional chemistry talent among high school students. The program includes regional competitions leading to a national final, where students demonstrate their theoretical knowledge and practical skills in chemistry. Winners have the opportunity to represent Ghana at the International Chemistry Olympiad. The program aims to inspire young minds, promote excellence in chemistry education, and build a pipeline of future chemistry leaders.',
+<<<<<<< HEAD
     image: '/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png',
+=======
+    image: '/src/assets/07.jpg',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'yellow',
     events: [
       {
@@ -189,7 +213,11 @@ const programsData: Record<string, Program> = {
     title: 'Industry-Academia Bridge',
     description: 'A program fostering collaboration between academic institutions and chemical industries in Ghana.',
     longDescription: 'The Industry-Academia Bridge program facilitates meaningful collaboration between academic institutions and chemical industries in Ghana. Through structured partnerships, joint research projects, and knowledge exchange initiatives, we aim to bridge the gap between theoretical knowledge and practical industrial applications. The program includes industry visits, collaborative research projects, internship opportunities, and joint workshops. By strengthening these connections, we enhance the relevance of academic research and support the growth of Ghana\'s chemical industry.',
+<<<<<<< HEAD
     image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+=======
+    image: '/src/assets/08.png',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'indigo',
     events: [
       {
@@ -214,7 +242,11 @@ const programsData: Record<string, Program> = {
     title: 'Internship Opportunities',
     description: 'A program connecting chemistry students and graduates with valuable internship opportunities in research institutions and industries.',
     longDescription: 'The GCS Internship Opportunities program serves as a bridge between talented chemistry students/graduates and leading research institutions, chemical industries, and laboratories across Ghana. Through strategic partnerships with academic institutions and industry leaders, we facilitate meaningful internship placements that provide hands-on experience, professional development, and potential career pathways. The program aims to enhance practical skills, build professional networks, and prepare the next generation of chemists for successful careers in both academia and industry.',
+<<<<<<< HEAD
     image: '/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png',
+=======
+    image: '/src/assets/07.jpg',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'teal',
     events: [
       {
@@ -239,7 +271,11 @@ const programsData: Record<string, Program> = {
     title: 'GCS Poster Festival',
     description: 'An annual showcase of research posters from chemistry students and researchers across Ghana.',
     longDescription: 'The GCS Poster Festival is a vibrant celebration of chemical research and innovation in Ghana. This annual event provides a platform for undergraduate and graduate students, as well as early-career researchers, to present their work through poster presentations. The festival fosters scientific communication skills, encourages networking among researchers, and showcases the diverse research being conducted in Ghana\'s chemistry community. Participants receive valuable feedback from established researchers and have the opportunity to win awards for outstanding presentations.',
+<<<<<<< HEAD
     image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+=======
+    image: '/src/assets/08.png',
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'pink',
     events: [
       {

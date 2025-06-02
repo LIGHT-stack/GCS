@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -12,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center mb-4">
               <div className="h-16 w-16 rounded-full border border-white overflow-hidden flex items-center justify-center bg-white mr-3">
                 <img 
-                  src="/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png" 
+                  src="/src/assets/Logo.png" 
                   alt="Ghana Chemical Society Logo" 
                   className="h-14 w-14 object-contain"
                 />

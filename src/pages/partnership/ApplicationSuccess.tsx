@@ -23,7 +23,11 @@ const ApplicationSuccess = () => {
       
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-gcs-blue/20 via-gcs-orange/10 to-transparent" />
+<<<<<<< HEAD
         <div className="absolute inset-0 bg-[url('/lovable-uploads/f325ad61-649a-4137-b354-0cdcc5dda909.png')] bg-cover bg-center opacity-10" />
+=======
+        <div className="absolute inset-0 bg-[url('/src/assets/globe ghana.png')] bg-cover bg-center opacity-10" />
+>>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
         
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div

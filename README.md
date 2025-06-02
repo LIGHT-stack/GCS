@@ -6,6 +6,27 @@
 
 The Ghana Chemical Society (GCS) website is a comprehensive platform designed to serve chemists and chemistry enthusiasts across Ghana. This website provides information about GCS events, programs, membership benefits, resources, and community initiatives.
 
+## Recent Changes (June 2, 2025)
+
+### 1. Dependency Updates
+- Removed `lovable-tagger` plugin and its dependencies
+- Updated Vite version to 5.4.19 to resolve dependency conflicts
+- Removed `componentTagger` plugin from `vite.config.ts`
+
+### 2. Asset Management
+- Removed `/lovable-uploads` directory
+- Created new `/src/assets` directory for image storage
+- Updated image references across components:
+  - Logo updated in navigation and footer
+  - Leadership profile images updated with correct names
+  - Program and event images replaced with new assets
+  - Community and partnership section images updated
+
+### 3. File Structure Changes
+- Simplified project structure by removing unused plugins
+- Consolidated image assets in a single directory
+- Updated image paths to use relative imports from assets
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -394,13 +415,9 @@ npm run dev
 
 ## Editing the Project
 
-### Using Lovable
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b239944e-566a-4966-9ebc-c78b2170cbca) and start prompting. Changes made via Lovable will be committed automatically to the repository.
-
 ### Using Your Preferred IDE
 
-You can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+You can clone this repo and push changes directly to the repository.
 
 ### Editing Directly in GitHub
 
@@ -550,6 +567,16 @@ If you encounter issues:
    - Use Vercel Analytics to identify problems
    - Check for large bundle sizes in the build output
    - Consider implementing lazy loading for routes
+
+4. **Dependency conflicts**:
+   If you encounter Vite dependency conflicts (e.g., `ERESOLVE could not resolve`), try these steps:
+   - Check your `package.json` for Vite version compatibility
+   - Ensure Vite version matches peer dependency requirements
+   - If needed, downgrade Vite to v5.x using:
+     ```bash
+     npm install vite@^5.0.0
+     ```
+   - Remove any non-critical dev dependencies that might cause conflicts
 
 ## License
 

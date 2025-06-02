@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card, CardContent } from "@/components/ui/card";
 import { User2 } from 'lucide-react';
@@ -17,28 +16,28 @@ const LeadershipSection = () => {
       position: "National President",
       institution: "Department of Chemistry, Kwame Nkrumah University of Science and Technology",
       bio: "Professor in the Department of Chemistry at KNUST with extensive experience in research and academic leadership.",
-      image: "/lovable-uploads/edf5c857-8c76-4ebb-b07f-2a43622e89a9.png"
+      image: "/src/assets/Prof Kwesi Acheampong.jpg"
     },
     {
       name: "Dr. Michael Baah Mensah",
       position: "National Secretary",
       institution: "Department of Chemistry, Kwame Nkrumah University of Science and Technology",
       bio: "Dedicated professional with expertise in organizational management and scientific communication. Lecturer at the Department of Chemistry, KNUST.",
-      image: "/lovable-uploads/f325ad61-649a-4137-b354-0cdcc5dda909.png"
+      image: "/src/assets/Dr Michael Baah Mensah.jpg"
     },
     {
       name: "Miss Janet Atebiya",
       position: "National Treasurer",
       institution: "Regional Water Quality Assurance Manager, GWCL, Sunyani",
       bio: "Specialist in water quality analysis and financial management with extensive experience in the public sector.",
-      image: "/lovable-uploads/75492fe3-ab5a-45be-a99f-28ecddc8c9e3.png"
+      image: "/src/assets/Janet Atebiya.jpg"
     },
     {
       name: "Isaac Aidoo",
       position: "National Service Personnel",
       institution: "Department of Chemistry, KNUST",
       bio: "Supporting the activities and operations of the Ghana Chemical Society.",
-      image: "/lovable-uploads/3799882f-7433-479b-aa23-ebf4661948ed.png"
+      image: "/src/assets/Isaac Aidoo.jpg"
     }
   ];
 
