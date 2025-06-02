@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
@@ -22,11 +21,7 @@ const LocalPartners = () => {
       <div className="relative h-[60vh] min-h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-<<<<<<< HEAD
-          src="/lovable-uploads/f325ad61-649a-4137-b354-0cdcc5dda909.png" 
-=======
           src="/src/assets/globe ghana.png" 
->>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
           alt="Local Partnerships" 
           className="absolute inset-0 w-full h-full object-cover"
         />

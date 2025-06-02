@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../../components/Navbar';
@@ -55,11 +54,7 @@ const NewsArticles = () => {
               <h2 className="text-2xl font-bold mb-6 text-gray-800">Featured News</h2>
               <div className="relative rounded-xl overflow-hidden h-80">
                 <img 
-<<<<<<< HEAD
-                  src="/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png" 
-=======
                   src="/src/assets/expert view logo.png" 
->>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
                   alt="GCS Annual Conference Announcement" 
                   className="w-full h-full object-cover"
                 />
