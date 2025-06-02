@@ -27,6 +27,15 @@ The Ghana Chemical Society (GCS) website is a comprehensive platform designed to
 - Consolidated image assets in a single directory
 - Updated image paths to use relative imports from assets
 
+### 4. Recent Merge Conflict Resolutions
+- Resolved conflicts in multiple component files:
+  - Updated image paths in `Footer.tsx`
+  - Fixed leadership profile images in `LeadershipSection.tsx`
+  - Updated logo path in `Logo.tsx`
+  - Fixed background images in `Partnership.tsx` and `PartnershipApply.tsx`
+- Maintained consistent asset paths using `/src/assets/` directory
+- Ensured proper image naming conventions
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
