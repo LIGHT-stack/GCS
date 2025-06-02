@@ -6,6 +6,27 @@
 
 The Ghana Chemical Society (GCS) website is a comprehensive platform designed to serve chemists and chemistry enthusiasts across Ghana. This website provides information about GCS events, programs, membership benefits, resources, and community initiatives.
 
+## Recent Changes (June 2, 2025)
+
+### 1. Dependency Updates
+- Removed `lovable-tagger` plugin and its dependencies
+- Updated Vite version to 5.4.19 to resolve dependency conflicts
+- Removed `componentTagger` plugin from `vite.config.ts`
+
+### 2. Asset Management
+- Removed `/lovable-uploads` directory
+- Created new `/src/assets` directory for image storage
+- Updated image references across components:
+  - Logo updated in navigation and footer
+  - Leadership profile images updated with correct names
+  - Program and event images replaced with new assets
+  - Community and partnership section images updated
+
+### 3. File Structure Changes
+- Simplified project structure by removing unused plugins
+- Consolidated image assets in a single directory
+- Updated image paths to use relative imports from assets
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
