@@ -22,7 +22,7 @@ const LocalPartners = () => {
       <div className="relative h-[60vh] min-h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-          src="/lovable-uploads/f325ad61-649a-4137-b354-0cdcc5dda909.png" 
+          src="/src/assets/globe ghana.png" 
           alt="Local Partnerships" 
           className="absolute inset-0 w-full h-full object-cover"
         />

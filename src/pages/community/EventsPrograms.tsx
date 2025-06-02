@@ -26,7 +26,7 @@ const programs = [
     id: 'time-with-researcher',
     title: 'Time with the Researcher',
     description: 'Interactive sessions connecting students with established researchers to provide mentorship and career guidance.',
-    image: '/lovable-uploads/3799882f-7433-479b-aa23-ebf4661948ed.png',
+    image: '/src/assets/03.jpg',
     color: 'bg-green-500'
   },
   {
@@ -40,14 +40,14 @@ const programs = [
     id: 'annual-conference',
     title: 'Annual Conference',
     description: 'The flagship annual gathering of chemists from Ghana and beyond, featuring presentations, posters, and networking opportunities.',
-    image: '/lovable-uploads/f325ad61-649a-4137-b354-0cdcc5dda909.png',
+    image: '/src/assets/04.png',
     color: 'bg-red-500'
   },
   {
     id: 'internship-opportunities',
     title: 'Internship Opportunities',
     description: 'Connecting students with industry partners for practical experience and professional development.',
-    image: '/lovable-uploads/edf5c857-8c76-4ebb-b07f-2a43622e89a9.png',
+    image: '/src/assets/05.png',
     color: 'bg-teal-500'
   },
   {
@@ -71,7 +71,7 @@ const EventsPrograms = () => {
       <div className="relative h-[60vh] min-h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-          src="/lovable-uploads/75492fe3-ab5a-45be-a99f-28ecddc8c9e3.png" 
+          src="/src/assets/06.jpg" 
           alt="Events and Programs" 
           className="absolute inset-0 w-full h-full object-cover"
         />

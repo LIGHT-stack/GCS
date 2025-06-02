@@ -55,7 +55,7 @@ const NewsArticles = () => {
               <h2 className="text-2xl font-bold mb-6 text-gray-800">Featured News</h2>
               <div className="relative rounded-xl overflow-hidden h-80">
                 <img 
-                  src="/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png" 
+                  src="/src/assets/expert view logo.png" 
                   alt="GCS Annual Conference Announcement" 
                   className="w-full h-full object-cover"
                 />
