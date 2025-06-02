@@ -415,13 +415,9 @@ npm run dev
 
 ## Editing the Project
 
-### Using Lovable
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/b239944e-566a-4966-9ebc-c78b2170cbca) and start prompting. Changes made via Lovable will be committed automatically to the repository.
-
 ### Using Your Preferred IDE
 
-You can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+You can clone this repo and push changes directly to the repository.
 
 ### Editing Directly in GitHub
 
