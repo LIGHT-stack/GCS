@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -20,7 +19,7 @@ const Community = () => {
       <div className="relative h-screen">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-          src="/lovable-uploads/3799882f-7433-479b-aa23-ebf4661948ed.png" 
+          src="/src/assets/community network.png" 
           alt="Community Network" 
           className="absolute inset-0 w-full h-full object-cover"
         />

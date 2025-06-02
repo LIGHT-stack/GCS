@@ -12,61 +12,49 @@ const programs = [
     id: 'instrument-connect',
     title: 'Instrument Connect',
     description: 'A program connecting researchers with analytical instruments across institutions in Ghana, promoting resource sharing and collaborative research.',
-    image: '/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png',
+    image: '/src/assets/01.png',
     color: 'bg-blue-500'
   },
   {
     id: 'expert-view-podcast',
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
-    image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+    image: '/src/assets/02.png',
     color: 'bg-orange-500'
   },
   {
     id: 'time-with-researcher',
     title: 'Time with the Researcher',
     description: 'Interactive sessions connecting students with established researchers to provide mentorship and career guidance.',
-<<<<<<< HEAD
-    image: '/lovable-uploads/3799882f-7433-479b-aa23-ebf4661948ed.png',
-=======
     image: '/src/assets/03.jpg',
->>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'bg-green-500'
   },
   {
     id: 'analytical-instrument-workshop',
     title: 'Analytical Instrument Workshop',
     description: 'Hands-on training on modern analytical chemistry instruments.',
-    image: '/lovable-uploads/3b39f562-df8b-4c69-98c1-e01522abf79f.png',
+    image: '/src/assets/01.png',
     color: 'bg-purple-500'
   },
   {
     id: 'annual-conference',
     title: 'Annual Conference',
     description: 'The flagship annual gathering of chemists from Ghana and beyond, featuring presentations, posters, and networking opportunities.',
-<<<<<<< HEAD
-    image: '/lovable-uploads/f325ad61-649a-4137-b354-0cdcc5dda909.png',
-=======
     image: '/src/assets/04.png',
->>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'bg-red-500'
   },
   {
     id: 'internship-opportunities',
     title: 'Internship Opportunities',
     description: 'Connecting students with industry partners for practical experience and professional development.',
-<<<<<<< HEAD
-    image: '/lovable-uploads/edf5c857-8c76-4ebb-b07f-2a43622e89a9.png',
-=======
     image: '/src/assets/05.png',
->>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
     color: 'bg-teal-500'
   },
   {
     id: 'gcs-poster-festival',
     title: 'GCS Poster Festival',
     description: 'A showcase of research posters from students and early-career researchers across Ghana.',
-    image: '/lovable-uploads/0d3014d5-b1df-4924-82db-92efdb2df75e.png',
+    image: '/src/assets/02.png',
     color: 'bg-indigo-500'
   }
 ];
@@ -83,11 +71,7 @@ const EventsPrograms = () => {
       <div className="relative h-[60vh] min-h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-<<<<<<< HEAD
-          src="/lovable-uploads/75492fe3-ab5a-45be-a99f-28ecddc8c9e3.png" 
-=======
           src="/src/assets/06.jpg" 
->>>>>>> 345f58f175da680e4e16a649576bd9f6922fa1ff
           alt="Events and Programs" 
           className="absolute inset-0 w-full h-full object-cover"
         />
