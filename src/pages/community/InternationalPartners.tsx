@@ -81,23 +81,25 @@ const InternationalPartners = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {/* Partner 1 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gcs-blue/10 flex items-center justify-center">
-                    <Globe className="h-8 w-8 text-gcs-blue" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Royal Society of Chemistry</h3>
-                    <p className="text-gray-500">United Kingdom</p>
-                  </div>
+                <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
+                  <img 
+                    src="/src/assets/International Partners/Royal Society of Chemistry - RSC.jpg" 
+                    alt="Royal Society of Chemistry"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <div className="space-y-3">
+                <div>
+                  <h3 className="text-xl font-bold">Royal Society of Chemistry</h3>
+                  <p className="text-gray-500">United Kingdom</p>
+                </div>
+                <div className="space-y-3 mt-4">
                   <p className="text-gray-700">Partnership focused on academic exchanges, joint publications, and educational resources.</p>
                   <ul className="list-disc pl-5 space-y-1 text-gray-600">
                     <li>Access to research journals and databases</li>
                     <li>Joint conferences and symposia</li>
                     <li>Exchange programs for researchers</li>
                   </ul>
-                  <Button variant="outline" className="flex items-center gap-2 mt-4">
+                  <Button variant="outline" className="flex items-center gap-2 mt-4" onClick={() => window.open('https://www.rsc.org', '_blank')}>
                     Visit Partner <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
@@ -105,23 +107,25 @@ const InternationalPartners = () => {
               
               {/* Partner 2 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-gcs-orange/10 flex items-center justify-center">
-                    <Globe className="h-8 w-8 text-gcs-orange" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">American Chemical Society</h3>
-                    <p className="text-gray-500">United States</p>
-                  </div>
+                <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
+                  <img 
+                    src="/src/assets/International Partners/Federation of African Societies of Chemistry - FASC.jpg" 
+                    alt="Federation of African Societies of Chemistry"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <div className="space-y-3">
-                  <p className="text-gray-700">Collaboration on research initiatives, educational programs, and professional development.</p>
+                <div>
+                  <h3 className="text-xl font-bold">Federation of African Societies of Chemistry</h3>
+                  <p className="text-gray-500">Pan-African</p>
+                </div>
+                <div className="space-y-3 mt-4">
+                  <p className="text-gray-700">Regional cooperation to advance chemistry across the African continent.</p>
                   <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                    <li>Research funding opportunities</li>
-                    <li>Professional certification programs</li>
-                    <li>Student chapters and mentorship</li>
+                    <li>Continental research networks</li>
+                    <li>Policy advocacy for science in Africa</li>
+                    <li>Joint African chemistry congresses</li>
                   </ul>
-                  <Button variant="outline" className="flex items-center gap-2 mt-4">
+                  <Button variant="outline" className="flex items-center gap-2 mt-4" onClick={() => window.open('https://www.fasc-africa.org', '_blank')}>
                     Visit Partner <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
@@ -129,23 +133,25 @@ const InternationalPartners = () => {
               
               {/* Partner 3 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center">
-                    <Globe className="h-8 w-8 text-green-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">IUPAC</h3>
-                    <p className="text-gray-500">International</p>
-                  </div>
+                <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
+                  <img 
+                    src="/src/assets/International Partners/Commonwealth Chemistry.jpg" 
+                    alt="Commonwealth Chemistry"
+                    className="w-full h-full object-contain"
+                  />
                 </div>
-                <div className="space-y-3">
-                  <p className="text-gray-700">Participation in global standards setting and international chemistry initiatives.</p>
+                <div>
+                  <h3 className="text-xl font-bold">Commonwealth Chemistry</h3>
+                  <p className="text-gray-500">International</p>
+                </div>
+                <div className="space-y-3 mt-4">
+                  <p className="text-gray-700">A network of chemical societies and institutions across the Commonwealth.</p>
                   <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                    <li>Global nomenclature and standards</li>
-                    <li>International chemistry Olympics</li>
+                    <li>Global collaboration opportunities</li>
+                    <li>International chemistry initiatives</li>
                     <li>Worldwide educational outreach</li>
                   </ul>
-                  <Button variant="outline" className="flex items-center gap-2 mt-4">
+                  <Button variant="outline" className="flex items-center gap-2 mt-4" onClick={() => window.open('https://www.commonwealthchemistry.org', '_blank')}>
                     Visit Partner <ExternalLink className="h-4 w-4" />
                   </Button>
                 </div>
@@ -156,30 +162,6 @@ const InternationalPartners = () => {
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center">
                     <Globe className="h-8 w-8 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold">Federation of African Societies of Chemistry</h3>
-                    <p className="text-gray-500">Pan-African</p>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <p className="text-gray-700">Regional cooperation to advance chemistry across the African continent.</p>
-                  <ul className="list-disc pl-5 space-y-1 text-gray-600">
-                    <li>Continental research networks</li>
-                    <li>Policy advocacy for science in Africa</li>
-                    <li>Joint African chemistry congresses</li>
-                  </ul>
-                  <Button variant="outline" className="flex items-center gap-2 mt-4">
-                    Visit Partner <ExternalLink className="h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-              
-              {/* Partner 5 */}
-              <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
-                <div className="flex items-center gap-4 mb-4">
-                  <div className="w-16 h-16 rounded-full bg-red-100 flex items-center justify-center">
-                    <Globe className="h-8 w-8 text-red-600" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold">Chemical Society of Japan</h3>
@@ -199,7 +181,7 @@ const InternationalPartners = () => {
                 </div>
               </div>
               
-              {/* Partner 6 */}
+              {/* Partner 5 */}
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center">

@@ -20,6 +20,8 @@ import MembersArea from './pages/membership/MembersArea';
 import VerifyEmail from '@/pages/auth/VerifyEmail';
 import ForgotPassword from '@/pages/auth/ForgotPassword';
 import ResetPassword from '@/pages/auth/ResetPassword';
+import MembershipRegister from './pages/membership/MembershipRegister';
+import MembershipRenew from './pages/membership/MembershipRenew';
 
 // Lazy load components
 const Index = lazy(() => import('./pages/Index'));
@@ -64,6 +66,9 @@ function App() {
             <Route path="/resources/journals" element={<Journals />} />
             <Route path="/resources/publications" element={<Publications />} />
             <Route path="/resources/news-articles" element={<NewsArticles />} />
+            <Route path="/membership" element={<Membership />} />
+            <Route path="/membership/register" element={<MembershipRegister />} />
+            <Route path="/membership/renew" element={<MembershipRenew />} />
             <Route path="/auth" element={<Login />} />
             <Route path="/auth/register" element={<Register />} />
             <Route path="/auth/callback" element={<AuthCallback />} />

@@ -22,16 +22,16 @@ const Footer: React.FC = () => {
               Advancing chemistry research, education, and applications in Ghana for a better tomorrow.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-gcs-blue transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61576389473485" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gcs-blue transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-gcs-blue transition-colors">
+              <a href="https://x.com/membership_GCS" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gcs-blue transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-gcs-blue transition-colors">
+              <a href="https://www.linkedin.com/company/ghana-chemical-society/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gcs-blue transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-gcs-blue transition-colors">
+              <a href="https://www.instagram.com/membership_gcs?igsh=MXg1dHNtaWhseDVpcg==" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-gcs-blue transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>

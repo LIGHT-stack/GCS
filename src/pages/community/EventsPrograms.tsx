@@ -18,7 +18,7 @@ const programs = [
     id: 'expert-view-podcast',
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
-    image: '/src/assets/02.png',
+    image: '/src/assets/Expert View Podcast/expert view logo.png',
     color: 'bg-orange-500'
   },
   {

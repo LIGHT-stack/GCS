@@ -16,6 +16,7 @@ interface Event {
   date: string;
   location: string;
   description: string;
+  image?: string;
 }
 
 interface Coordinator {
@@ -69,20 +70,22 @@ const programsData: Record<string, Program> = {
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
     longDescription: 'The Expert View Podcast is a digital initiative that brings the insights and experiences of leading chemistry experts to a wider audience. Through in-depth interviews, we explore cutting-edge research, career journeys, educational pathways, and the societal impact of chemistry. The podcast serves as both an educational resource and a way to highlight the achievements of chemists from Ghana and beyond, inspiring the next generation of scientific talent.',
-    image: '/src/assets/08.png',
+    image: '/src/assets/Expert View Podcast/expert view logo.png',
     color: 'orange',
     events: [
       {
         title: 'Podcast Live Recording: Green Chemistry',
         date: '2025-05-18',
         location: 'Virtual Event',
-        description: 'Live recording with international experts in green chemistry.'
+        description: 'Live recording with international experts in green chemistry.',
+        image: '/src/assets/Expert View Podcast/EXPECT VIEW December.jpg'
       },
       {
         title: 'Podcast Launch Event',
         date: '2025-04-30',
         location: 'Ghana Academy of Arts and Sciences, Accra',
-        description: 'Official launch of Season 3 of the Expert View Podcast.'
+        description: 'Official launch of Season 3 of the Expert View Podcast.',
+        image: '/src/assets/Expert View Podcast/EXPECT VIEW December.jpg'
       }
     ],
     coordinators: [

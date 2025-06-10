@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
 import { Input } from "@/components/ui/input";
@@ -9,25 +8,25 @@ const SocialMediaSection = () => {
     {
       name: "Facebook",
       icon: <Facebook className="h-6 w-6" />,
-      url: "https://facebook.com/ghanachemicalsociety",
+      url: "https://www.facebook.com/profile.php?id=61576389473485",
       color: "bg-blue-600 hover:bg-blue-700"
     },
     {
       name: "Twitter",
       icon: <Twitter className="h-6 w-6" />,
-      url: "https://twitter.com/ghanachemsoc",
+      url: "https://x.com/membership_GCS",
       color: "bg-sky-500 hover:bg-sky-600"
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="h-6 w-6" />,
-      url: "https://linkedin.com/company/ghana-chemical-society",
+      url: "https://www.linkedin.com/company/ghana-chemical-society/",
       color: "bg-blue-700 hover:bg-blue-800"
     },
     {
       name: "Instagram",
       icon: <Instagram className="h-6 w-6" />,
-      url: "https://instagram.com/ghanachemicalsociety",
+      url: "https://www.instagram.com/membership_gcs?igsh=MXg1dHNtaWhseDVpcg==",
       color: "bg-pink-600 hover:bg-pink-700"
     },
     {

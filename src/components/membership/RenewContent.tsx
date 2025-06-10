@@ -1,38 +1,24 @@
-
 import React from 'react';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useForm } from "react-hook-form";
-import { z } from "zod";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { Calendar } from 'lucide-react';
-
-const renewSchema = z.object({
-  membershipId: z.string().min(5, { message: "Please enter a valid membership ID" }),
-  email: z.string().email({ message: "Please enter a valid email address" }),
-  membershipType: z.string().min(1, { message: "Please select a membership type" }),
-  renewalPeriod: z.string().min(1, { message: "Please select a renewal period" })
-});
-
-type RenewFormValues = z.infer<typeof renewSchema>;
+import { useNavigate } from 'react-router-dom';
+import { useToast } from '@/hooks/use-toast';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
+import { AlertCircle } from 'lucide-react';
 
 const RenewContent = () => {
-  const form = useForm<RenewFormValues>({
-    resolver: zodResolver(renewSchema),
-    defaultValues: {
-      membershipId: "",
-      email: "",
-      membershipType: "",
-      renewalPeriod: "1"
-    }
-  });
+  const navigate = useNavigate();
+  const { toast } = useToast();
 
-  const onSubmit = (data: RenewFormValues) => {
-    console.log("Renewal form submitted:", data);
-    // This would normally connect to a backend API
-    alert("Thank you for renewing your membership! We'll process your renewal shortly.");
-    form.reset();
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Add renewal logic here
+    toast({
+      title: "Renewal Request Submitted",
+      description: "We will process your renewal request and contact you shortly.",
+    });
+    navigate('/membership');
   };
 
   return (
@@ -41,142 +27,75 @@ const RenewContent = () => {
         Renew Your GCS Membership
       </h2>
       <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
-        Keep your membership active to continue enjoying all the benefits 
-        of being part of Ghana's premier chemical society.
+        Complete the form below to renew your membership. Please ensure all information is accurate.
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="membershipId"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Membership ID</FormLabel>
-                      <FormControl>
-                        <Input {...field} placeholder="Enter your GCS membership ID" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Email Address</FormLabel>
-                      <FormControl>
-                        <Input {...field} type="email" placeholder="Your registered email" />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
+      <div className="max-w-2xl mx-auto">
+        <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="space-y-4">
+            <div>
+              <Label htmlFor="memberId">Member ID</Label>
+              <Input
+                id="memberId"
+                placeholder="Enter your member ID"
+                required
+              />
+            </div>
+            
+            <div>
+              <Label htmlFor="email">Email Address</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="Enter your registered email"
+                required
+              />
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <FormField
-                  control={form.control}
-                  name="membershipType"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Current Membership Type</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select membership type" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="student">Student Member</SelectItem>
-                          <SelectItem value="associate">Associate Member</SelectItem>
-                          <SelectItem value="full">Full Member</SelectItem>
-                          <SelectItem value="fellow">Fellow</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-                <FormField
-                  control={form.control}
-                  name="renewalPeriod"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>Renewal Period</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select renewal period" />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent>
-                          <SelectItem value="1">1 Year</SelectItem>
-                          <SelectItem value="2">2 Years</SelectItem>
-                          <SelectItem value="3">3 Years</SelectItem>
-                          <SelectItem value="5">5 Years</SelectItem>
-                        </SelectContent>
-                      </Select>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-              </div>
-              
-              <button 
-                type="submit" 
-                className="w-full bg-gcs-blue hover:bg-gcs-blue/80 text-white font-semibold py-3 px-6 rounded-md transition-colors"
+            <div>
+              <Label htmlFor="membershipType">Membership Type</Label>
+              <select
+                id="membershipType"
+                className="w-full rounded-md border border-gray-300 px-3 py-2"
+                required
               >
-                Renew Membership
-              </button>
-            </form>
-          </Form>
-        </div>
-        
-        <div className="space-y-6">
-          <div className="bg-gcs-blue/10 rounded-lg p-6 border border-gcs-blue/30">
-            <h3 className="text-xl font-bold text-gray-800 mb-4">Renewal Benefits</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="flex-shrink-0 h-5 w-5 rounded-full bg-gcs-orange flex items-center justify-center text-white font-bold mr-2">✓</span>
-                <span className="text-gray-700">Uninterrupted access to member benefits</span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 h-5 w-5 rounded-full bg-gcs-orange flex items-center justify-center text-white font-bold mr-2">✓</span>
-                <span className="text-gray-700">Multi-year discounts available</span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 h-5 w-5 rounded-full bg-gcs-orange flex items-center justify-center text-white font-bold mr-2">✓</span>
-                <span className="text-gray-700">Opportunity to upgrade membership tier</span>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 h-5 w-5 rounded-full bg-gcs-orange flex items-center justify-center text-white font-bold mr-2">✓</span>
-                <span className="text-gray-700">Early access to upcoming events</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div className="bg-white p-6 rounded-lg shadow-md border border-gray-100">
-            <div className="flex items-center text-gcs-blue mb-4">
-              <Calendar className="mr-2 h-5 w-5" />
-              <h3 className="text-lg font-semibold">Renewal Reminder Service</h3>
+                <option value="">Select membership type</option>
+                <option value="fellow">Fellow Member</option>
+                <option value="regular">Regular Member</option>
+                <option value="student">Student Member</option>
+              </select>
             </div>
-            <p className="text-gray-700 mb-4">
-              Never miss your renewal date again! Sign up to receive email reminders 
-              30 days before your membership expires.
-            </p>
-            <div className="flex">
-              <Input placeholder="Your email address" className="flex-grow mr-2" />
-              <button className="bg-gcs-orange hover:bg-gcs-orange/80 text-white px-4 py-2 rounded transition-colors">
-                Subscribe
-              </button>
+
+            <div>
+              <Label htmlFor="duration">Renewal Duration</Label>
+              <select
+                id="duration"
+                className="w-full rounded-md border border-gray-300 px-3 py-2"
+                required
+              >
+                <option value="">Select duration</option>
+                <option value="1">1 Year</option>
+                <option value="2">2 Years</option>
+                <option value="3">3 Years</option>
+              </select>
             </div>
           </div>
-        </div>
+
+          <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 flex items-start gap-3">
+            <AlertCircle className="h-5 w-5 text-yellow-600 mt-0.5" />
+            <div>
+              <h4 className="font-medium text-yellow-800">Important Notice</h4>
+              <p className="text-sm text-yellow-700">
+                Please ensure your contact information is up to date. You will receive a confirmation email 
+                once your renewal is processed.
+              </p>
+            </div>
+          </div>
+
+          <Button type="submit" className="w-full bg-gcs-blue hover:bg-gcs-blue/90">
+            Submit Renewal Request
+          </Button>
+        </form>
       </div>
     </div>
   );
