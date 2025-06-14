@@ -33,11 +33,40 @@ const Login = () => {
       if (error) throw error;
 
       if (data.user) {
+        // Check user profile status
+        const { data: profile, error: profileError } = await supabase
+          .from('gcs_profiles')
+          .select('status')
+          .eq('id', data.user.id)
+          .single();
+
+        if (profileError) throw profileError;
+
+        if (!profile) {
+          toast({
+            title: "Profile Not Found",
+            description: "Please complete your profile setup",
+            variant: "destructive"
+          });
+          navigate('/membership/register');
+          return;
+        }
+
+        if (profile.status === 'pending') {
+          toast({
+            title: "Membership Pending",
+            description: "Your membership is still being reviewed",
+            variant: "destructive"
+          });
+          navigate('/membership');
+          return;
+        }
+
         toast({
           title: "Login Successful",
           description: "Welcome back to Ghana Chemical Society!",
         });
-        navigate('/dashboard');
+        navigate('/membership/members-area');
       }
     } catch (error: any) {
       console.error('Login error:', error);

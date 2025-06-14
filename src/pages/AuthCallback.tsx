@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { supabase } from '@/lib/supabase';
-import { useToast } from '@/hooks/use-toast';
 
-const AuthCallback = () => {
+export default function AuthCallback() {
   const navigate = useNavigate();
-  const { toast } = useToast();
 
   useEffect(() => {
     const handleAuthCallback = async () => {
       try {
         const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
-        if (sessionError) throw sessionError;
+        if (sessionError) {
+          console.error('Session error:', sessionError);
+          navigate('/auth');
+          return;
+        }
         
         if (!session) {
+          console.log('No session found');
           navigate('/auth');
           return;
         }
@@ -27,6 +30,7 @@ const AuthCallback = () => {
           .single();
 
         if (profileError && profileError.code !== 'PGRST116') {
+          console.error('Profile error:', profileError);
           throw profileError;
         }
 
@@ -36,47 +40,39 @@ const AuthCallback = () => {
             .from('gcs_profiles')
             .insert({
               id: session.user.id,
-              name: session.user.user_metadata?.name || '',
+              name: session.user.user_metadata?.name || session.user.email,
               email: session.user.email,
               phone: session.user.user_metadata?.phone || '',
               place_of_work: session.user.user_metadata?.place_of_work || '',
               position: session.user.user_metadata?.position || '',
-              membership_type: session.user.user_metadata?.membership_type || 'regular',
+              membership_type: 'student',
+              role: 'member',
               status: 'pending'
             });
 
-          if (insertError) throw insertError;
+          if (insertError) {
+            console.error('Insert error:', insertError);
+            throw insertError;
+          }
         }
 
         // Redirect to dashboard
         navigate('/dashboard');
-      } catch (error: any) {
+      } catch (error) {
         console.error('Auth callback error:', error);
-        toast({
-          title: "Error",
-          description: error.message || "An error occurred during authentication",
-          variant: "destructive"
-        });
         navigate('/auth');
       }
     };
 
     handleAuthCallback();
-  }, [navigate, toast]);
+  }, [navigate]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="text-center">
-        <div className="animate-spin mb-4">
-          <svg className="h-12 w-12 text-gcs-blue" viewBox="0 0 24 24">
-            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
-            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-          </svg>
-        </div>
-        <h2 className="text-xl font-semibold text-gray-800">Processing...</h2>
+        <h2 className="text-2xl font-semibold mb-4">Loading...</h2>
+        <p className="text-gray-600">Please wait while we set up your account.</p>
       </div>
     </div>
   );
-};
-
-export default AuthCallback; 
+} 

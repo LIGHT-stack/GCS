@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -9,6 +9,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Lock, LogIn, Mail } from 'lucide-react';
 import { supabase } from '@/lib/supabase';
 import { useNavigate } from 'react-router-dom';
+import { FcGoogle } from 'react-icons/fc';
 
 const loginSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email address" }),
@@ -24,6 +25,7 @@ interface LoginFormProps {
 const LoginForm = ({ onSuccess }: LoginFormProps) => {
   const { toast } = useToast();
   const navigate = useNavigate();
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(loginSchema),
@@ -107,21 +109,29 @@ const LoginForm = ({ onSuccess }: LoginFormProps) => {
   };
 
   const handleGoogleLogin = async () => {
+    setIsGoogleLoading(true);
     try {
       const { error } = await supabase.auth.signInWithOAuth({
         provider: 'google',
         options: {
-          redirectTo: `${window.location.origin}/auth/callback`
+          redirectTo: `${window.location.origin}/auth/callback`,
+          queryParams: {
+            access_type: 'offline',
+            prompt: 'consent',
+          },
         }
       });
 
       if (error) throw error;
     } catch (error: any) {
+      console.error('Google login error:', error);
       toast({
         title: "Google Login Failed",
         description: error.message || "An error occurred during Google login",
         variant: "destructive"
       });
+    } finally {
+      setIsGoogleLoading(false);
     }
   };
 
@@ -220,14 +230,26 @@ const LoginForm = ({ onSuccess }: LoginFormProps) => {
         </div>
         
         <div className="mt-6 grid grid-cols-2 gap-3">
-          <Button variant="outline" className="w-full" onClick={handleGoogleLogin}>
-            <svg className="mr-2 h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20.283 10.356h-8.327v3.451h4.792c-.446 2.193-2.313 3.453-4.792 3.453a5.27 5.27 0 0 1-5.279-5.28 5.27 5.27 0 0 1 5.279-5.279c1.259 0 2.397.447 3.29 1.178l2.6-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z" fill="#4285F4"/>
-              <path d="M12.956 9.325H4.63v3.451h4.791c-.446 2.193-2.313 3.453-4.791 3.453a5.27 5.27 0 0 1-5.28-5.28 5.27 5.27 0 0 1 5.28-5.279c1.259 0 2.397.447 3.29 1.178l2.599-2.599c-1.584-1.381-3.615-2.233-5.89-2.233a8.908 8.908 0 0 0-8.934 8.934 8.907 8.907 0 0 0 8.934 8.934c4.467 0 8.529-3.249 8.529-8.934 0-.528-.081-1.097-.202-1.625z" fill="#34A853"/>
-              <path d="M3.853 14.751a5.4 5.4 0 0 1 .781-2.524v-3.286c-1.584 1.171-2.6 3.067-2.6 5.281 0 3.189 2.09 5.912 5.28 5.912.445 0 .867-.044 1.258-.126v-3.206a6.217 6.217 0 0 1-1.258.126 5.27 5.27 0 0 1-3.461-1.477z" fill="#FBBC05"/>
-              <path d="M8.934 17.224c1.145 0 2.233-.227 3.234-.681v-3.2c-1.584 1.171-2.6 3.067-2.6 5.281 0 .445.044.867.126 1.258h3.2a6.217 6.217 0 0 1-.126-1.258c0-1.584.681-3.007 1.767-4.007z" fill="#EA4335"/>
+          <Button
+            variant="outline"
+            className="w-full mb-4 flex items-center justify-center gap-2 hover:bg-gray-50"
+            onClick={handleGoogleLogin}
+            disabled={isGoogleLoading}
+          >
+            {isGoogleLoading ? (
+              <span className="flex items-center">
+                <svg className="w-5 h-5 mr-2 animate-spin" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
             </svg>
-            Google
+                Processing...
+              </span>
+            ) : (
+              <>
+                <FcGoogle className="h-5 w-5" />
+                Continue with Google
+              </>
+            )}
           </Button>
           <Button variant="outline" className="w-full" onClick={handleGitHubLogin}>
             <svg className="mr-2 h-5 w-5 text-[#24292F]" fill="currentColor" viewBox="0 0 24 24">

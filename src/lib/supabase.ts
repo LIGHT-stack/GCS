@@ -1,7 +1,12 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://dymuhkgryowvtkcaqgsw.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bXVoa2dyeW93dnRrY2FxZ3N3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDgxODEzOTMsImV4cCI6MjA2Mzc1NzM5M30.Pelb-gjsdls-yBeFMC-P6MI08jq_f_sbx6D2lhseeFM';
+// Get Supabase credentials from environment variables
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+if (!supabaseUrl || !supabaseAnonKey) {
+  console.error('Missing Supabase credentials. Please check your environment variables.');
+}
 
 // Create Supabase client with debug options
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
@@ -23,12 +28,18 @@ export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
 // Add error logging
 supabase.auth.onAuthStateChange((event, session) => {
   console.log('Auth state changed:', event, session);
+  if (event === 'SIGNED_OUT') {
+    // Handle sign out gracefully
+    window.location.href = '/';
+  }
 });
 
 // Test the connection
 supabase.auth.getSession().then(({ data: { session }, error }) => {
   if (error) {
     console.error('Supabase connection error:', error);
+    // Handle connection error gracefully
+    window.location.href = '/maintenance';
   } else {
     console.log('Supabase connected successfully');
   }
