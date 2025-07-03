@@ -18,14 +18,14 @@ import Dashboard from './pages/Dashboard';
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
 import MembersArea from './pages/membership/MembersArea';
-import VerifyEmail from '@/pages/auth/VerifyEmail';
-import ForgotPassword from '@/pages/auth/ForgotPassword';
-import ResetPassword from '@/pages/auth/ResetPassword';
+import VerifyEmail from './pages/auth/VerifyEmail.tsx';
+import ForgotPassword from './pages/auth/ForgotPassword.tsx';
+import ResetPassword from './pages/auth/ResetPassword.tsx';
 import MembershipRegister from './pages/membership/MembershipRegister';
 import MembershipRenew from './pages/membership/MembershipRenew';
 import AdminDashboard from './pages/admin/AdminDashboard';
 import { useToast } from './hooks/use-toast';
-import Maintenance from '@/pages/Maintenance';
+import Maintenance from './pages/Maintenance.tsx';
 
 // Lazy load components
 const Index = lazy(() => import('./pages/Index'));
