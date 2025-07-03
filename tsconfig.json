@@ -1,9 +1,6 @@
 {
   "compilerOptions": {
-<<<<<<< HEAD
     "jsx": "react-jsx",
-=======
->>>>>>> 2fc5bbb11398f7f86abfef6cbe3e4af481a93fdd
     "target": "ES2020",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
@@ -12,13 +9,9 @@
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-<<<<<<< HEAD
-    "resolveJsonModule": true,
-    "jsx": "react"
-=======
     "resolveJsonModule": true
->>>>>>> 2fc5bbb11398f7f86abfef6cbe3e4af481a93fdd
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
+
