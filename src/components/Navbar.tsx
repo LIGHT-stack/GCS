@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, Users, Link as LinkIcon } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
-import MobileMenu from './MobileMenu';
-import Logo from './navigation/Logo';
-import NavigationItems from './navigation/NavigationItems';
-import NavActions from './navigation/NavActions';
+import MobileMenu from './MobileMenu.tsx';
+import Logo from './navigation/Logo.tsx';
+import NavigationItems from './navigation/NavigationItems.tsx';
+import NavActions from './navigation/NavActions.tsx';
 
 const Navbar: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);

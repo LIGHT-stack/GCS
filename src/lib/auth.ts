@@ -1,10 +1,9 @@
-import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
-import { useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabase.ts';
 
 export const useAuth = () => {
-  const supabase = createClientComponentClient();
-  const router = useRouter();
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -40,7 +39,7 @@ export const useAuth = () => {
         password
       });
       if (error) throw error;
-      router.push('/dashboard');
+      navigate('/dashboard');
       return { data, error: null };
     } catch (err: any) {
       setError(err.message);
@@ -56,7 +55,7 @@ export const useAuth = () => {
       setError(null);
       const { error } = await supabase.auth.signOut();
       if (error) throw error;
-      router.push('/');
+      navigate('/');
     } catch (err: any) {
       setError(err.message);
     } finally {

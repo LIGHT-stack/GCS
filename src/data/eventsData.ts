@@ -2,8 +2,8 @@
 
 export interface EventData {
   name: string;
-  date: Date;
-  endDate: Date;
+  date: string;
+  endDate: string;
   location: string;
   description: string;
   longDescription?: string;
@@ -29,6 +29,7 @@ export interface EventData {
   }[];
   type: string;
   registrationLink?: string;
+  time?: string;
 }
 
 // Map of event IDs to event data
@@ -132,8 +133,8 @@ const eventsData: Record<string, EventData> = {
   },
   "green-chemistry-workshop": {
     name: "Workshop on Green Chemistry Practices",
-    date: new Date(2025, 6, 15), // July 15, 2025
-    endDate: new Date(2025, 6, 16), // July 16, 2025
+    date: "2025-07-15",
+    endDate: "2025-07-16",
     location: "University of Ghana, Legon Campus",
     description: "Learn about sustainable chemical processes and environmentally friendly laboratory practices.",
     longDescription: "This intensive two-day workshop focuses on green chemistry principles and their practical applications in research and industry. Participants will learn how to design chemical products and processes that reduce or eliminate the generation of hazardous substances, conserve energy, and minimize waste production.\n\nThe workshop combines theoretical sessions with hands-on laboratory demonstrations to provide a comprehensive understanding of sustainable chemistry practices that can be implemented immediately in your work environment.",
@@ -179,8 +180,8 @@ const eventsData: Record<string, EventData> = {
   },
   "analytical-chemistry-symposium": {
     name: "Analytical Chemistry Symposium",
-    date: new Date(2025, 7, 8), // August 8, 2025
-    endDate: new Date(2025, 7, 10), // August 10, 2025
+    date: "2025-08-08",
+    endDate: "2025-08-10",
     location: "University of Cape Coast, Cape Coast",
     description: "A focused symposium on advances in analytical chemistry techniques and applications in research and industry.",
     longDescription: "The Analytical Chemistry Symposium brings together experts from academia, industry, and regulatory bodies to discuss the latest advances in analytical techniques, instrumentation, and applications. The symposium will cover a wide range of topics including chromatography, spectroscopy, mass spectrometry, electrochemistry, and the application of these techniques in environmental monitoring, food safety, pharmaceutical analysis, and materials characterization.\n\nThis three-day event offers excellent opportunities for professionals, researchers, and students to learn about cutting-edge analytical methods, share their research findings, and build collaborative networks within the analytical chemistry community in Ghana and across Africa.",
@@ -234,8 +235,8 @@ const eventsData: Record<string, EventData> = {
   },
   "chemistry-education-conference": {
     name: "Chemistry Education Conference",
-    date: new Date(2025, 5, 12), // June 12, 2025
-    endDate: new Date(2025, 5, 14), // June 14, 2025
+    date: "2025-06-12",
+    endDate: "2025-06-14",
     location: "University of Education, Winneba",
     description: "A conference focused on improving chemistry education at all levels in Ghana.",
     longDescription: "The Chemistry Education Conference is dedicated to advancing the teaching and learning of chemistry in Ghana from primary schools through universities. This conference brings together teachers, curriculum developers, education researchers, and policy makers to share innovative teaching methods, curriculum enhancements, and research findings that can improve how chemistry is taught and learned.\n\nThe conference features presentations, workshops, and discussions on topics such as incorporating practical work, addressing misconceptions, using digital resources, making chemistry relevant to students' lives, and preparing students for careers in chemistry-related fields. Attendees will gain valuable insights and practical strategies they can implement in their own teaching contexts.",
@@ -290,8 +291,8 @@ const eventsData: Record<string, EventData> = {
   },
   "chemical-industry-networking": {
     name: "Chemical Industry Networking Summit",
-    date: new Date(2025, 9, 5), // October 5, 2025
-    endDate: new Date(2025, 9, 6), // October 6, 2025
+    date: "2025-10-05",
+    endDate: "2025-10-06",
     location: "Accra International Conference Centre",
     description: "Connect with industry leaders, explore career opportunities, and learn about the latest trends in the chemical industry.",
     longDescription: "The Chemical Industry Networking Summit is Ghana's premier event for connecting chemistry professionals with industry leaders, employers, and innovators. This two-day summit offers a unique platform for networking, career development, and knowledge exchange focused on the chemical industry, its challenges, and opportunities in Ghana and the broader African context.\n\nParticipants will engage with representatives from manufacturing, pharmaceuticals, petrochemicals, agrochemicals, environmental services, research organizations, and educational institutions. The summit includes panel discussions, company presentations, career workshops, and numerous networking opportunities designed to foster meaningful connections between chemistry professionals and industry stakeholders.",

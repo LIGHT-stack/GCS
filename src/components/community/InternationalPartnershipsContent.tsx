@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Globe, Award, Book, Users } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 
 const InternationalPartnershipsContent = () => {
   return (

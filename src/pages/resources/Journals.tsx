@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import AnimatedBackground from '../../components/AnimatedBackground';
-import JournalsContent from '../../components/resources/JournalsContent';
-import { Button } from '@/components/ui/button';
+import Navbar from '../../components/Navbar.tsx';
+import AnimatedBackground from '../../components/AnimatedBackground.tsx';
+import JournalsContent from '../../components/resources/JournalsContent.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ChevronLeft, BookOpen, Search } from 'lucide-react';
 
 const Journals = () => {

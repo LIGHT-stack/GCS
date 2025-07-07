@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import AnimatedBackground from '@/components/AnimatedBackground';
-import RegisterContent from '@/components/membership/RegisterContent';
-import { Button } from '@/components/ui/button';
+import Navbar from '@/components/Navbar.tsx';
+import Footer from '@/components/Footer.tsx';
+import AnimatedBackground from '@/components/AnimatedBackground.tsx';
+import RegisterContent from '@/components/membership/RegisterContent.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ArrowLeft } from 'lucide-react';
 
 const MembershipRegister = () => {

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import EventCard, { Event } from './EventCard';
+import EventCard, { Event } from './EventCard.tsx';
 
 /**
  * EventsList Component

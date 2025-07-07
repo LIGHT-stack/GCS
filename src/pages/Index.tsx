@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import EventsSection from '../components/EventsSection';
-import ProgramsSection from '../components/ProgramsSection';
-import AnimatedBackground from '../components/AnimatedBackground';
-import OurImpactSection from '../components/OurImpactSection';
-import { upcomingEvents } from '../data/events';
+import Navbar from '../components/Navbar.tsx';
+import Footer from '../components/Footer.tsx';
+import Hero from '../components/Hero.tsx';
+import EventsSection from '../components/EventsSection.tsx';
+import ProgramsSection from '../components/ProgramsSection.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
+import OurImpactSection from '../components/OurImpactSection.tsx';
+import { upcomingEvents } from '../data/events.ts';
 
 /**
  * Index Component
@@ -26,7 +27,7 @@ const Index = () => {
       <AnimatedBackground />
       <Navbar />
       <Hero />
-      <EventsSection events={upcomingEvents} autoPlay={true} />
+      <EventsSection events={upcomingEvents} />
       <ProgramsSection />
       <OurImpactSection />
     </div>

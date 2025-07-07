@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { useToast } from "@/hooks/use-toast";
-import { Checkbox } from "@/components/ui/checkbox";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select.tsx";
+import { useToast } from "@/hooks/use-toast.ts";
+import { Checkbox } from "@/components/ui/checkbox.tsx";
 import { Mail, User, Phone, Building, Briefcase, Lock } from 'lucide-react';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '@/lib/supabase.ts';
 import { useNavigate } from 'react-router-dom';
-import { Separator } from '@/components/ui/separator';
+import { Separator } from '@/components/ui/separator.tsx';
 import { FcGoogle } from 'react-icons/fc';
 
 // Match the database schema exactly
@@ -154,7 +154,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="name"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Full Name</FormLabel>
                 <FormControl>
@@ -171,7 +171,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="email"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
@@ -188,7 +188,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="password"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>
@@ -205,7 +205,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="confirmPassword"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Confirm Password</FormLabel>
                 <FormControl>
@@ -222,7 +222,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="phone"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Phone Number</FormLabel>
                 <FormControl>
@@ -239,7 +239,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="place_of_work"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Place of Work</FormLabel>
                 <FormControl>
@@ -256,7 +256,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="position"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Position</FormLabel>
                 <FormControl>
@@ -273,7 +273,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="membership_type"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Membership Type</FormLabel>
                 <Select onValueChange={field.onChange} defaultValue={field.value}>
@@ -297,7 +297,7 @@ const SignUpForm = ({ onSuccess }: SignUpFormProps) => {
           <FormField
             control={form.control}
             name="agreeTerms"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem className="flex flex-row items-start space-x-3 space-y-0">
                 <FormControl>
                   <Checkbox

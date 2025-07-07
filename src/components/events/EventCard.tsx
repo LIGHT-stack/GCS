@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Calendar, MapPin, Users, Clock } from 'lucide-react';
 import { format } from 'date-fns';
-import { Event } from '@/types/event';
+import { Event } from '@/types/event.ts';
 
 interface EventCardProps {
   event: Event;

@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import AnimatedBackground from '../components/AnimatedBackground';
-import { Button } from '@/components/ui/button';
+import Navbar from '../components/Navbar.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ArrowRight, Globe, Building, Calendar, Users } from 'lucide-react';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 
 const Community = () => {
   // Update page title

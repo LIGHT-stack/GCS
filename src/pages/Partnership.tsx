@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import PartnershipHeader from '../components/partnership/PartnershipHeader';
-import SponsorshipContent from '../components/partnership/SponsorshipContent';
-import ResearchFundingContent from '../components/partnership/ResearchFundingContent';
-import GrantsScholarshipsContent from '../components/partnership/GrantsScholarshipsContent';
-import AnimatedBackground from '../components/AnimatedBackground';
+import Navbar from '../components/Navbar.tsx';
+import PartnershipHeader from '../components/partnership/PartnershipHeader.tsx';
+import SponsorshipContent from '../components/partnership/SponsorshipContent.tsx';
+import ResearchFundingContent from '../components/partnership/ResearchFundingContent.tsx';
+import GrantsScholarshipsContent from '../components/partnership/GrantsScholarshipsContent.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
 import { motion } from 'framer-motion';
 
 const Partnership = () => {
@@ -34,7 +34,7 @@ const Partnership = () => {
     <div className="min-h-screen relative overflow-x-hidden">
       <AnimatedBackground />
       <Navbar />
-      <PartnershipHeader activeTab={activeTab} />
+      <PartnershipHeader />
       
       <section id="programs" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

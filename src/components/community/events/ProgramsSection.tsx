@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Award } from 'lucide-react';
-import { ProgramCategory } from './EventsData';
-import ProgramCard from './ProgramCard';
+import { ProgramCategory } from './EventsData.ts';
+import ProgramCard from './ProgramCard.tsx';
 
 /**
  * ProgramsSection Component

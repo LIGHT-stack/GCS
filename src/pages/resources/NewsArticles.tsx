@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import AnimatedBackground from '../../components/AnimatedBackground';
-import NewsArticlesContent from '../../components/resources/NewsArticlesContent';
-import { Button } from '@/components/ui/button';
+import Navbar from '../../components/Navbar.tsx';
+import AnimatedBackground from '../../components/AnimatedBackground.tsx';
+import NewsArticlesContent from '../../components/resources/NewsArticlesContent.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ChevronLeft, Newspaper } from 'lucide-react';
 
 const NewsArticles = () => {

@@ -1,6 +1,6 @@
 import { z } from 'zod';
-import { FormWrapper } from './FormWrapper';
-import { useAuth } from '@/lib/auth';
+import { FormWrapper } from './FormWrapper.tsx';
+import { useStore } from '@/lib/store.ts';
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 
 const scholarshipSchema = z.object({
@@ -15,7 +15,7 @@ const scholarshipSchema = z.object({
 });
 
 export const ScholarshipForm = () => {
-  const { user } = useAuth();
+  const user = useStore(state => state.user);
   const supabase = createClientComponentClient();
 
   const handleSubmit = async (data: z.infer<typeof scholarshipSchema>) => {

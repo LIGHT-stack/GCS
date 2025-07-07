@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { supabase } from '@/lib/supabase';
-import { useToast } from '@/hooks/use-toast';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { supabase } from '@/lib/supabase.ts';
+import { useToast } from '@/hooks/use-toast.ts';
+import { Button } from '@/components/ui/button.tsx';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card.tsx';
+import { Badge } from '@/components/ui/badge.tsx';
 import { Check, X } from 'lucide-react';
 
 interface MemberProfile {
@@ -106,7 +106,7 @@ const MembershipApproval = () => {
                   <p className="text-gray-600">{member.email}</p>
                 </div>
                 <Badge variant={
-                  member.status === 'active' ? 'success' :
+                  member.status === 'active' ? 'default' :
                   member.status === 'suspended' ? 'destructive' :
                   'default'
                 }>

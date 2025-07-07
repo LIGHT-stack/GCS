@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import HistorySection from '../components/about/HistorySection';
-import MissionVisionSection from '../components/about/MissionVisionSection';
-import LeadershipSection from '../components/about/LeadershipSection';
-import ContactSection from '../components/about/ContactSection';
-import SocialMediaSection from '../components/about/SocialMediaSection';
-import AboutHero from '../components/about/AboutHero';
+import Navbar from '../components/Navbar.tsx';
+import Footer from '../components/Footer.tsx';
+import HistorySection from '../components/about/HistorySection.tsx';
+import MissionVisionSection from '../components/about/MissionVisionSection.tsx';
+import LeadershipSection from '../components/about/LeadershipSection.tsx';
+import ContactSection from '../components/about/ContactSection.tsx';
+import SocialMediaSection from '../components/about/SocialMediaSection.tsx';
+import AboutHero from '../components/about/AboutHero.tsx';
 
 const About = () => {
   // Update page title

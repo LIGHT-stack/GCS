@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import LoginForm from './LoginForm';
-import SignUpForm from './SignUpForm';
-import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs.tsx";
+import LoginForm from './LoginForm.tsx';
+import SignUpForm from './SignUpForm.tsx';
+import { Card, CardContent } from "@/components/ui/card.tsx";
 import { LockKeyhole, UserPlus } from 'lucide-react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 

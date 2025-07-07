@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { EventSchedule } from '../EventSchedule';
+import { EventSchedule } from '../EventSchedule.tsx';
 
 const mockSchedule = [
   {

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
+import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { Button } from "@/components/ui/button.tsx";
+import { useToast } from "@/hooks/use-toast.ts";
 import { Lock, LogIn, Mail } from 'lucide-react';
-import { supabase } from '@/lib/supabase';
+import { supabase } from '@/lib/supabase.ts';
 import { useNavigate } from 'react-router-dom';
 import { FcGoogle } from 'react-icons/fc';
 
@@ -166,7 +166,7 @@ const LoginForm = ({ onSuccess }: LoginFormProps) => {
           <FormField
             control={form.control}
             name="email"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Email</FormLabel>
                 <FormControl>
@@ -183,7 +183,7 @@ const LoginForm = ({ onSuccess }: LoginFormProps) => {
           <FormField
             control={form.control}
             name="password"
-            render={({ field }) => (
+            render={({ field }: any) => (
               <FormItem>
                 <FormLabel>Password</FormLabel>
                 <FormControl>

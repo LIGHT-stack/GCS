@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
-import AuthContent from '../components/auth/AuthContent';
-import AnimatedBackground from '../components/AnimatedBackground';
+import Navbar from '../components/Navbar.tsx';
+import Footer from '../components/Footer.tsx';
+import AuthContent from '../components/auth/AuthContent.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
 
 const Auth = () => {
   const [searchParams] = useSearchParams();

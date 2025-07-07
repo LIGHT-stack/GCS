@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Card, CardContent, CardImage, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardImage, CardTitle } from "@/components/ui/card.tsx";
 import { Landmark, Building } from 'lucide-react';
 
 interface SponsorProps {

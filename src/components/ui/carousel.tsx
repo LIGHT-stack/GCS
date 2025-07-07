@@ -1,12 +1,11 @@
-
 import * as React from "react"
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
-import { cn } from "@/lib/utils"
-import { CarouselContent, CarouselItem } from "./carousel-content"
-import { CarouselPrevious, CarouselNext } from "./carousel-navigation"
-import { CarouselContext, CarouselApi } from "./carousel-context"
+import { cn } from "@/lib/utils.ts"
+import { CarouselContent, CarouselItem } from "./carousel-content.tsx"
+import { CarouselPrevious, CarouselNext } from "./carousel-navigation.tsx"
+import { CarouselContext, CarouselApi } from "./carousel-context.ts"
 
 /**
  * Props for the Carousel component

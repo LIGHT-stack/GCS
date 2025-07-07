@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar.tsx';
 
 interface Speaker {
   name: string;
@@ -35,6 +35,14 @@ const SpeakerCard = memo(({ name, title, institution, topic }: Speaker) => (
 ));
 
 SpeakerCard.displayName = 'SpeakerCard';
+
+// Minimal Event type stub for local use if '@/types/event.ts' is missing
+export type Event = {
+  id: string;
+  name: string;
+  date: string;
+  location: string;
+};
 
 export const EventSpeakers = memo(({ speakers }: EventSpeakersProps) => {
   return (

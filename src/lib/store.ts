@@ -12,16 +12,16 @@ interface User {
   role: UserRole;
   avatar?: string;
   preferences?: {
-    notifications: boolean;
-    emailUpdates: boolean;
+    notifications?: boolean;
+    emailUpdates?: boolean;
   };
 }
 
 interface Event {
   id: string;
   name: string;
-  date: Date;
-  endDate: Date;
+  date: string;
+  endDate: string;
   location: string;
   description: string;
   type: string;

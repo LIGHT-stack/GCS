@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Calendar, MapPin } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button.tsx';
+import { Badge } from '@/components/ui/badge.tsx';
 
 /**
  * ProgramDetailEvents Component

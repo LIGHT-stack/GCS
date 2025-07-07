@@ -1,8 +1,8 @@
 import React from 'react';
 import { useSearchParams } from 'react-router-dom';
-import PartnershipApplicationForm from '../components/partnership/PartnershipApplicationForm';
-import Navbar from '../components/Navbar';
-import AnimatedBackground from '../components/AnimatedBackground';
+import PartnershipApplicationForm from '../components/partnership/PartnershipApplicationForm.tsx';
+import Navbar from '../components/Navbar.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
 
 const PartnershipApply = () => {
   const [searchParams] = useSearchParams();

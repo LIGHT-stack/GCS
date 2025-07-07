@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
-import { useAuth } from '@/lib/auth';
-import { useRouter } from 'next/navigation';
+import { useAuth } from '@/lib/auth.ts';
+
 import {
   LayoutDashboard,
   Users,
@@ -16,7 +16,7 @@ interface DashboardLayoutProps {
 
 export const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   const { signOut } = useAuth();
-  const router = useRouter();
+  
 
   const navigation = [
     { name: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },

@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { Calendar, Award, MessageCircle } from 'lucide-react';
-import EventsList from './events/EventsList';
-import ProgramsSection from './events/ProgramsSection';
-import { upcomingEvents, pastEvents, programCategories } from './events/EventsData';
+import EventsList from './events/EventsList.tsx';
+import ProgramsSection from './events/ProgramsSection.tsx';
+import { upcomingEvents, pastEvents, programCategories } from './events/EventsData.ts';
 
 /**
  * EventsProgramsContent Component

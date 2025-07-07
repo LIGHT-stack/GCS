@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useToast } from '@/hooks/use-toast';
-import { supabase } from '@/lib/supabase';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
+import { useToast } from '@/hooks/use-toast.ts';
+import { supabase } from '@/lib/supabase.ts';
+import { Button } from '@/components/ui/button.tsx';
+import { Card, CardContent } from '@/components/ui/card.tsx';
 import { Shield, Award, User, FileBarChart, BookOpen } from 'lucide-react';
-import LoginForm from '@/components/auth/LoginForm';
-import SignUpForm from '@/components/auth/SignUpForm';
+import LoginForm from '@/components/auth/LoginForm.tsx';
+import SignUpForm from '@/components/auth/SignUpForm.tsx';
 
 interface LoggedInMemberContentProps {
   memberName: string;

@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import BenefitsContent from './BenefitsContent';
-import RegisterContent from './RegisterContent';
-import RenewContent from './RenewContent';
-import MembersAreaContent from './MembersAreaContent';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs.tsx";
+import BenefitsContent from './BenefitsContent.tsx';
+import RegisterContent from './RegisterContent.tsx';
+import RenewContent from './RenewContent.tsx';
+import MembersAreaContent from './MembersAreaContent.tsx';
 
 interface MembershipTabsProps {
   defaultTab?: string;

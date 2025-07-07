@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import type { FormEvent, ChangeEvent } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Checkbox } from "@/components/ui/checkbox";
-import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button.tsx";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
+import { Input } from "@/components/ui/input.tsx";
+import { Label } from "@/components/ui/label.tsx";
+import { Textarea } from "@/components/ui/textarea.tsx";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select.tsx";
+import { Checkbox } from "@/components/ui/checkbox.tsx";
+import { useToast } from "@/hooks/use-toast.ts";
 import { ArrowRight, Building2, FileText, Award, GraduationCap, Users } from 'lucide-react';
 
 interface ApplicationFormProps {
@@ -40,6 +41,11 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
     grantType: '',
     budget: '',
     timeline: '',
+    address: '',
+    city: '',
+    country: '',
+    message: '',
+    agreeToTerms: false,
   });
 
   // Get form title and description based on type
@@ -68,7 +74,8 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
 
   const formDetails = getFormDetails();
 
-  const handleSubmit = async (e: React.FormEvent) => {
+
+const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -87,21 +94,26 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
       setFormData({
         organizationName: '',
         organizationType: '',
-        website: '',
         contactName: '',
+        position: '',
         email: '',
         phone: '',
-        address: '',
-        city: '',
-        country: '',
-        message: '',
-        agreeToTerms: false,
-        // Additional fields
+        website: '',
+        description: '',
+        goals: '',
+        additionalInfo: '',
+        termsAccepted: false,
+        privacyAccepted: false,
         sponsorshipTier: tier || '',
         researchGoals: '',
         grantType: '',
         budget: '',
         timeline: '',
+        address: '',
+        city: '',
+        country: '',
+        message: '',
+        agreeToTerms: false,
       });
 
       // Redirect to success page
@@ -116,6 +128,15 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
     } finally {
       setIsSubmitting(false);
     }
+  };
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleCheckboxChange = (checked: boolean, name: string) => {
+    setFormData({ ...formData, [name]: checked });
   };
 
   return (
@@ -144,8 +165,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="organizationName">Organization Name</Label>
                   <Input 
                     id="organizationName"
+                    name="organizationName"
                     value={formData.organizationName}
-                    onChange={(e) => setFormData({ ...formData, organizationName: e.target.value })}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -153,7 +175,7 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="organizationType">Organization Type</Label>
                   <Select 
                     value={formData.organizationType}
-                    onValueChange={(value) => setFormData({ ...formData, organizationType: value })}
+                    onValueChange={(value: string) => setFormData({ ...formData, organizationType: value })}
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select organization type" />
@@ -172,8 +194,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                 <Label htmlFor="description">Organization Description</Label>
                 <Textarea 
                   id="description"
+                  name="description"
                   value={formData.description}
-                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  onChange={handleInputChange}
                   placeholder="Tell us about your organization"
                   required
                 />
@@ -188,8 +211,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="contactName">Contact Person</Label>
                   <Input 
                     id="contactName"
+                    name="contactName"
                     value={formData.contactName}
-                    onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -197,8 +221,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="position">Position</Label>
                   <Input 
                     id="position"
+                    name="position"
                     value={formData.position}
-                    onChange={(e) => setFormData({ ...formData, position: e.target.value })}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -209,8 +234,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Input 
                     id="email"
                     type="email"
+                    name="email"
                     value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -219,8 +245,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Input 
                     id="phone"
                     type="tel"
+                    name="phone"
                     value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -230,8 +257,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                 <Input 
                   id="website"
                   type="url"
+                  name="website"
                   value={formData.website}
-                  onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                  onChange={handleInputChange}
                   placeholder="https://"
                 />
               </div>
@@ -245,7 +273,7 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="tier">Desired Partnership Tier</Label>
                   <Select 
                     value={tier}
-                    onValueChange={(value) => setFormData({ ...formData, sponsorshipTier: value })}
+                    onValueChange={(value: string) => setFormData({ ...formData, sponsorshipTier: value })}
                   >
                     <SelectTrigger>
                       <SelectValue placeholder="Select partnership tier" />
@@ -267,8 +295,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="goals">Research Goals</Label>
                   <Textarea 
                     id="goals"
+                    name="goals"
                     value={formData.goals}
-                    onChange={(e) => setFormData({ ...formData, goals: e.target.value })}
+                    onChange={handleInputChange}
                     placeholder="Describe your research goals and objectives"
                     required
                   />
@@ -277,8 +306,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="additionalInfo">Additional Information</Label>
                   <Textarea 
                     id="additionalInfo"
+                    name="additionalInfo"
                     value={formData.additionalInfo}
-                    onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
+                    onChange={handleInputChange}
                     placeholder="Any additional information about your research proposal"
                   />
                 </div>
@@ -292,8 +322,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="goals">Project Goals</Label>
                   <Textarea 
                     id="goals"
+                    name="goals"
                     value={formData.goals}
-                    onChange={(e) => setFormData({ ...formData, goals: e.target.value })}
+                    onChange={handleInputChange}
                     placeholder="Describe your project goals and expected outcomes"
                     required
                   />
@@ -302,8 +333,9 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                   <Label htmlFor="additionalInfo">Additional Information</Label>
                   <Textarea 
                     id="additionalInfo"
+                    name="additionalInfo"
                     value={formData.additionalInfo}
-                    onChange={(e) => setFormData({ ...formData, additionalInfo: e.target.value })}
+                    onChange={handleInputChange}
                     placeholder="Any additional information about your grant application"
                   />
                 </div>
@@ -316,7 +348,7 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                 <Checkbox 
                   id="terms"
                   checked={formData.termsAccepted}
-                  onCheckedChange={(checked) => setFormData({ ...formData, termsAccepted: checked as boolean })}
+                  onCheckedChange={(checked: boolean) => handleCheckboxChange(checked, 'termsAccepted')}
                   required
                 />
                 <Label htmlFor="terms" className="text-sm text-gray-600">
@@ -327,7 +359,7 @@ const PartnershipApplicationForm: React.FC<ApplicationFormProps> = ({ type, tier
                 <Checkbox 
                   id="privacy"
                   checked={formData.privacyAccepted}
-                  onCheckedChange={(checked) => setFormData({ ...formData, privacyAccepted: checked as boolean })}
+                  onCheckedChange={(checked: boolean) => handleCheckboxChange(checked, 'privacyAccepted')}
                   required
                 />
                 <Label htmlFor="privacy" className="text-sm text-gray-600">

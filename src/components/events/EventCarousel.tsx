@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import EventCard from './EventCard';
-import CarouselIndicators from './CarouselIndicators';
+import { Button } from '@/components/ui/button.tsx';
+import EventCard from './EventCard.tsx';
+import CarouselIndicators from './CarouselIndicators.tsx';
 
 /**
  * EventCarousel Component

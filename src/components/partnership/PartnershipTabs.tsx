@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import SponsorshipContent from './SponsorshipContent';
-import ResearchFundingContent from './ResearchFundingContent';
-import GrantsScholarshipsContent from './GrantsScholarshipsContent';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs.tsx";
+import SponsorshipContent from './SponsorshipContent.tsx';
+import ResearchFundingContent from './ResearchFundingContent.tsx';
+import GrantsScholarshipsContent from './GrantsScholarshipsContent.tsx';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 

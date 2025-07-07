@@ -1,9 +1,9 @@
 
 import React from 'react';
 import { MapPin, Building, GraduationCap, Beaker } from 'lucide-react';
-import PartnershipCard, { PartnerItem } from './partnerships/PartnershipCard';
-import HeaderSection from './partnerships/HeaderSection';
-import JoinNetworkSection from './partnerships/JoinNetworkSection';
+import PartnershipCard, { PartnerItem } from './partnerships/PartnershipCard.tsx';
+import HeaderSection from './partnerships/HeaderSection.tsx';
+import JoinNetworkSection from './partnerships/JoinNetworkSection.tsx';
 
 const academicPartners: PartnerItem[] = [
   {

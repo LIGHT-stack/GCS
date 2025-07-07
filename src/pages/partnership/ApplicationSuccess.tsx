@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import AnimatedBackground from '../../components/AnimatedBackground';
+import { Button } from "@/components/ui/button.tsx";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
+import Navbar from '../../components/Navbar.tsx';
+import Footer from '../../components/Footer.tsx';
+import AnimatedBackground from '../../components/AnimatedBackground.tsx';
 import { CheckCircle2, ArrowRight, Home, Mail } from 'lucide-react';
 
 const ApplicationSuccess = () => {

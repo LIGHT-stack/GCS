@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../components/Navbar';
-import ResourcesHeader from '../components/resources/ResourcesHeader';
-import AnimatedBackground from '../components/AnimatedBackground';
-import { Button } from '@/components/ui/button';
+import Navbar from '../components/Navbar.tsx';
+import ResourcesHeader from '../components/resources/ResourcesHeader.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ArrowRight, BookOpen, Newspaper, FileText } from 'lucide-react';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 
 const Resources = () => {
   // Update page title

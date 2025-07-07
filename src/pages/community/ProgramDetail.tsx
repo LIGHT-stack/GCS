@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import AnimatedBackground from '../../components/AnimatedBackground';
-import { Button } from '@/components/ui/button';
+import Navbar from '../../components/Navbar.tsx';
+import AnimatedBackground from '../../components/AnimatedBackground.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ChevronLeft, Calendar, MapPin, Users, Image as ImageIcon, Award, Check, User, Info, ExternalLink, Mail, Landmark } from 'lucide-react';
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardImage, CardTitle } from "@/components/ui/card";
-import ProgramSponsors from '@/components/community/events/ProgramSponsors';
+import { Badge } from '@/components/ui/badge.tsx';
+import { Card, CardContent, CardImage, CardTitle } from "@/components/ui/card.tsx";
+import ProgramSponsors from '@/components/community/events/ProgramSponsors.tsx';
 
 /**
  * Type definitions for the component

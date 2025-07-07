@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import NavItem from './NavItem';
+import NavItem from './NavItem.tsx';
 
 /**
  * Navigation data structure

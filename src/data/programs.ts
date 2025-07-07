@@ -1,4 +1,4 @@
-import { Program } from '@/types/program';
+import { Program } from '@/types/program.ts';
 
 export const programsData: Record<string, Program> = {
   'annual-conference': {

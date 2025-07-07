@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { Compass, BookOpen, Heart, Award } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 
 const OutreachContent = () => {
   return (

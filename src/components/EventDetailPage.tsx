@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { useEventDetail } from '../hooks/useEventDetail';
-import Navbar from '../components/Navbar';
-import { Button } from '@/components/ui/button';
-import EventSponsors from './EventSponsors';
-import { EventHero } from './events/EventHero';
-import { EventSchedule } from './events/EventSchedule';
-import { EventSpeakers } from './events/EventSpeakers';
-import { EventDetails } from './events/EventDetails';
+import { useEventDetail } from '../hooks/useEventDetail.ts';
+import Navbar from '../components/Navbar.tsx';
+import { Button } from '@/components/ui/button.tsx';
+import EventSponsors from './EventSponsors.tsx';
+import { EventHero } from './events/EventHero.tsx';
+import { EventSchedule } from './events/EventSchedule.tsx';
+import { EventSpeakers } from './events/EventSpeakers.tsx';
+import { EventDetails } from './events/EventDetails.tsx';
 
 const EventDetailPage = () => {
   const eventData = useEventDetail();

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
-import Navbar from '../components/Navbar';
-import AnimatedBackground from '../components/AnimatedBackground';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from "@/components/ui/card";
+import Navbar from '../components/Navbar.tsx';
+import AnimatedBackground from '../components/AnimatedBackground.tsx';
+import { Button } from '@/components/ui/button.tsx';
+import { Card, CardContent } from '@/components/ui/card.tsx';
 import { Globe, ExternalLink } from 'lucide-react';
 
 const InternationalPartners = () => {

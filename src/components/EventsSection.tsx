@@ -1,8 +1,8 @@
 import React, { memo } from 'react';
 import { motion } from 'framer-motion';
-import { useCarousel } from '@/hooks/useCarousel';
-import EventCarousel from './events/EventCarousel';
-import { Skeleton } from './ui/skeleton';
+import { useCarousel } from '@/hooks/useCarousel.ts';
+import EventCarousel from './events/EventCarousel.tsx';
+import { Skeleton } from './ui/skeleton.tsx';
 
 interface Event {
   name: string;

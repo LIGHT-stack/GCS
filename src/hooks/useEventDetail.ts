@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
 import { useParams } from 'react-router-dom';
-import eventsData from '../data/eventsData';
+import eventsData from '../data/eventsData.ts';
 
 /**
  * Hook to retrieve event data based on URL parameter

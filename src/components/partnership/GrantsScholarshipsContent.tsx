@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button.tsx";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
+import { Badge } from "@/components/ui/badge.tsx";
 import { ArrowRight, Award, BookOpen, Building2, CheckCircle2, FileText, GraduationCap, Lightbulb, Microscope, Users } from "lucide-react";
 import { Link } from 'react-router-dom';
 

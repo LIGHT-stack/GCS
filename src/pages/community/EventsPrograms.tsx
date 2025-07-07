@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import { Button } from '@/components/ui/button';
+import Navbar from '../../components/Navbar.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ChevronLeft, Calendar, ArrowRight } from 'lucide-react';
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card.tsx";
 
 // Programs data
 const programs = [

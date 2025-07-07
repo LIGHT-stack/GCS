@@ -1,6 +1,6 @@
 import React, { Suspense, lazy, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { supabase } from './lib/supabase';
+import { supabase } from './lib/supabase.ts';
 import Navbar from './components/Navbar.tsx';
 import Footer from './components/Footer.tsx';
 import About from './pages/About.tsx';
@@ -13,7 +13,7 @@ import Membership from './pages/Membership.tsx';
 import NotFound from './pages/NotFound.tsx';
 import AnimatedBackground from './components/AnimatedBackground.tsx';
 import AuthCallback from './pages/AuthCallback.tsx';
-import ProtectedRoute from './components/ProtectedRoute.tsx';
+import ProtectedRouteComponent from './components/ProtectedRoute.tsx';
 import Dashboard from './pages/Dashboard.tsx';
 import Login from './pages/auth/Login.tsx';
 import Register from './pages/auth/Register.tsx';
@@ -47,7 +47,7 @@ const LoadingSpinner = () => (
 );
 
 // Protected Route component
-const ProtectedRoute = ({ children, requiredRole = null }: { children: React.ReactNode, requiredRole?: string | null }) => {
+const ProtectedRouteLocal = ({ children, requiredRole = null }: { children: React.ReactNode, requiredRole?: string | null }) => {
   const [loading, setLoading] = useState(true);
   const [authorized, setAuthorized] = useState(false);
   const { toast } = useToast();
@@ -147,14 +147,14 @@ function App() {
             <Route path="/auth/verify" element={<VerifyEmail />} />
             <Route path="/auth/forgot-password" element={<ForgotPassword />} />
             <Route path="/auth/reset-password" element={<ResetPassword />} />
-            <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
-            <Route path="/membership/members-area" element={<ProtectedRoute><MembersArea /></ProtectedRoute>} />
+            <Route path="/dashboard" element={<ProtectedRouteComponent><Dashboard /></ProtectedRouteComponent>} />
+            <Route path="/membership/members-area" element={<ProtectedRouteComponent><MembersArea /></ProtectedRouteComponent>} />
             <Route 
               path="/admin" 
               element={
-                <ProtectedRoute requiredRole="admin">
+                <ProtectedRouteComponent>
                   <AdminDashboard />
-                </ProtectedRoute>
+                </ProtectedRouteComponent>
               } 
             />
             <Route path="/maintenance" element={<Maintenance />} />

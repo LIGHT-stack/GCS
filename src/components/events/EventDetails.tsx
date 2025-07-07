@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button.tsx';
 import { Calendar, MapPin, Users, Clock, ExternalLink } from 'lucide-react';
 import { format } from 'date-fns';
 

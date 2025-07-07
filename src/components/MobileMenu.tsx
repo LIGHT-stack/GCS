@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, ChevronUp, Menu, X } from 'lucide-react';
-import { navigationItems } from './navigation/NavigationItems';
+import { navigationItems } from './navigation/NavigationItems.tsx';
+
+type NavigationSubItemType = { title: string; path: string };
+type NavigationItemType = { title: string; path: string; subItems: NavigationSubItemType[] };
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -41,7 +44,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
       </div>
 
       <nav className="p-4">
-        {navigationItems.map((item, index) => (
+        {navigationItems.map((item: NavigationItemType, index: number) => (
           <div key={index} className="mb-4">
             <div className="flex items-center justify-between">
               <Link
@@ -72,7 +75,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
             </div>
             {expandedItems.includes(item.title) && item.subItems.length > 0 && (
               <div className="pl-4 mt-2 space-y-2">
-                {item.subItems.map((subItem, subIndex) => (
+                {item.subItems.map((subItem: NavigationSubItemType, subIndex: number) => (
                   <Link
                     key={subIndex}
                     to={subItem.path}

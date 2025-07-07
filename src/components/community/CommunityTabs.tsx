@@ -1,11 +1,10 @@
-
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import InternationalPartnershipsContent from './InternationalPartnershipsContent';
-import LocalPartnershipsContent from './LocalPartnershipsContent';
-import EventsProgramsContent from './EventsProgramsContent';
-import OutreachContent from './OutreachContent';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs.tsx";
+import InternationalPartnershipsContent from './InternationalPartnershipsContent.tsx';
+import LocalPartnershipsContent from './LocalPartnershipsContent.tsx';
+import EventsProgramsContent from './EventsProgramsContent.tsx';
+import OutreachContent from './OutreachContent.tsx';
 
 interface CommunityTabsProps {
   defaultTab?: string;

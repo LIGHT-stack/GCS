@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
 
 export interface PartnerItem {
   title: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { EventSpeakers } from '../EventSpeakers';
+import { EventSpeakers } from '../EventSpeakers.tsx';
 
 const mockSpeakers = [
   {

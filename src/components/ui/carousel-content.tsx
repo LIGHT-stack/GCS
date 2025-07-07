@@ -1,7 +1,6 @@
-
 import * as React from "react"
-import { cn } from "@/lib/utils"
-import { useCarousel } from "./carousel-context"
+import { cn } from "@/lib/utils.ts"
+import { useCarousel } from "./carousel-context.ts"
 
 /**
  * CarouselContent Component

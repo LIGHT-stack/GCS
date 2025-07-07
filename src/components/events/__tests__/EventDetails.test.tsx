@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import { EventDetails } from '../EventDetails';
+import { EventDetails } from '../EventDetails.tsx';
 
 const mockEventDetails = {
-  date: new Date('2024-05-01T09:00:00'),
-  endDate: new Date('2024-05-02T17:00:00'),
+  date: '2024-05-01T09:00:00Z',
+  endDate: '2024-05-01T17:00:00Z',
   location: 'Accra International Conference Centre',
   attendees: 500,
   organizers: 'Ghana Chemical Society'

@@ -1,11 +1,11 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import JournalsContent from './JournalsContent';
-import NewsArticlesContent from './NewsArticlesContent';
-import PublicationsContent from './PublicationsContent';
-import TabsIllustration from './TabsIllustration';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs.tsx';
+import JournalsContent from './JournalsContent.tsx';
+import NewsArticlesContent from './NewsArticlesContent.tsx';
+import PublicationsContent from './PublicationsContent.tsx';
+import TabsIllustration from './TabsIllustration.tsx';
 import { BookOpen, Newspaper, FileText } from 'lucide-react';
 
 /**

@@ -1,11 +1,10 @@
-
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import AnimatedBackground from '../../components/AnimatedBackground';
-import RenewContent from '../../components/membership/RenewContent';
-import { Button } from '@/components/ui/button';
+import Navbar from '../../components/Navbar.tsx';
+import Footer from '../../components/Footer.tsx';
+import AnimatedBackground from '../../components/AnimatedBackground.tsx';
+import RenewContent from '../../components/membership/RenewContent.tsx';
+import { Button } from '@/components/ui/button.tsx';
 import { ChevronLeft } from 'lucide-react';
 
 const MembershipRenew = () => {

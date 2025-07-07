@@ -1,9 +1,8 @@
-
 import * as React from "react"
 import { ArrowLeft, ArrowRight } from "lucide-react"
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { useCarousel } from "./carousel-context"
+import { cn } from "@/lib/utils.ts"
+import { Button } from "@/components/ui/button.tsx"
+import { useCarousel } from "./carousel-context.ts"
 
 /**
  * CarouselPrevious Component

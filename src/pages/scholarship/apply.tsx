@@ -1,10 +1,14 @@
-import { ScholarshipForm } from '@/components/forms/ScholarshipForm';
-import { useAuth } from '@/lib/auth';
-import { useRouter } from 'next/navigation';
+import { ScholarshipForm } from '@/components/forms/ScholarshipForm.tsx';
+import { useAuth } from '@/lib/auth.ts';
+import { useStore } from '@/lib/store.ts';
+// import { useRouter } from 'next/navigation'; // Removed: not available in Vite/CRA
+const useRouter = () => ({ push: (url: string) => { window.location.href = url; } });
 import { useEffect } from 'react';
 
 export default function ScholarshipApplicationPage() {
-  const { user, loading } = useAuth();
+  const auth = useAuth();
+  const user = useStore((state) => state.user);
+  const loading = auth.loading;
   const router = useRouter();
 
   useEffect(() => {
