@@ -5,6 +5,30 @@ This document tracks the progress made on the Ghana Chemical Society (GCS) websi
 
 ## Date: 2025-07-20
 
+### 1. Fixed Image Paths for Netlify Deployment
+- **Issue**: Images not displaying on Netlify deployment
+- **Root Cause**: Absolute paths to `/src/assets/` were breaking in production
+- **Solution**:
+  - Moved all images from `src/assets/` to `public/images/`
+  - Updated all image paths to use `/images/` prefix
+  - Fixed paths in the following components:
+    - `Community.tsx`
+    - `LocalPartners.tsx`
+    - `InternationalPartners.tsx`
+    - `EventsPrograms.tsx`
+    - `Footer.tsx`
+    - `Logo.tsx`
+    - `PartnershipApply.tsx`
+    - `ApplicationSuccess.tsx`
+    - `ProgramDetail.tsx`
+    - `LeadershipSection.tsx`
+    - `events.ts`
+    - `eventsData.ts`
+- **Commit**: `4b68722` - "fix: update image paths to use public/images directory for production"
+- **Deployment**: Changes pushed to master branch, triggering Netlify deployment
+
+## Date: 2025-07-20
+
 ### 1. Repository Setup
 - Connected local repository to GitHub: `https://github.com/LIGHT-stack/GCS.git`
 - Verified Git remote configuration
