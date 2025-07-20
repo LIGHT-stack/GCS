@@ -24,7 +24,7 @@ import ResetPassword from './pages/auth/ResetPassword.tsx';
 import MembershipRegister from './pages/membership/MembershipRegister.tsx';
 import MembershipRenew from './pages/membership/MembershipRenew.tsx';
 import AdminDashboard from './pages/admin/AdminDashboard.tsx';
-import { useToast } from './hooks/use-toast.tsx';
+import { useToast } from './hooks/use-toast.js';
 import Maintenance from './pages/Maintenance.tsx';
 
 // Lazy load components
