@@ -45,7 +45,7 @@ const programsData: Record<string, Program> = {
     title: 'Instrument Connect',
     description: 'A program connecting researchers with analytical instruments across institutions in Ghana, promoting resource sharing and collaborative research.',
     longDescription: 'Instrument Connect is a flagship program of the Ghana Chemical Society that addresses the challenge of limited access to sophisticated analytical instruments in research institutions across Ghana. By creating a network of shared instrumentation resources, we enable researchers to conduct advanced analytical work without the need for every institution to acquire expensive equipment. This program promotes collaboration, optimizes resource utilization, and accelerates scientific discovery.',
-    image: '/src/assets/07.jpg',
+    image: '/images/07.jpg',
     color: 'blue',
     events: [
       {
@@ -70,7 +70,7 @@ const programsData: Record<string, Program> = {
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
     longDescription: 'The Expert View Podcast is a digital initiative that brings the insights and experiences of leading chemistry experts to a wider audience. Through in-depth interviews, we explore cutting-edge research, career journeys, educational pathways, and the societal impact of chemistry. The podcast serves as both an educational resource and a way to highlight the achievements of chemists from Ghana and beyond, inspiring the next generation of scientific talent.',
-    image: '/src/assets/Expert View Podcast/expert view logo.png',
+    image: '/images/Expert_View_Podcast/expert view logo.png',
     color: 'orange',
     events: [
       {
@@ -78,14 +78,14 @@ const programsData: Record<string, Program> = {
         date: '2025-05-18',
         location: 'Virtual Event',
         description: 'Live recording with international experts in green chemistry.',
-        image: '/src/assets/Expert View Podcast/EXPECT VIEW December.jpg'
+        image: '/images/Expert_View_Podcast/EXPECT VIEW December.jpg'
       },
       {
         title: 'Podcast Launch Event',
         date: '2025-04-30',
         location: 'Ghana Academy of Arts and Sciences, Accra',
         description: 'Official launch of Season 3 of the Expert View Podcast.',
-        image: '/src/assets/Expert View Podcast/EXPECT VIEW December.jpg'
+        image: '/images/Expert_View_Podcast/EXPECT VIEW December.jpg'
       }
     ],
     coordinators: [
@@ -97,7 +97,7 @@ const programsData: Record<string, Program> = {
     title: 'Time with the Researcher',
     description: 'Interactive sessions connecting students with established researchers to provide mentorship and career guidance.',
     longDescription: 'Time with the Researcher is a mentorship program designed to bridge the gap between established researchers and students. Through scheduled sessions, students gain insights into research methodologies, career pathways, and the day-to-day realities of a scientific career. The program helps demystify the research process, provides valuable networking opportunities, and inspires students to pursue careers in chemical sciences.',
-    image: '/src/assets/08.png',
+    image: '/images/08.png',
     color: 'green',
     events: [
       {
@@ -122,7 +122,7 @@ const programsData: Record<string, Program> = {
     title: 'Analytical Instrument Workshop',
     description: 'Hands-on training on modern analytical chemistry instruments.',
     longDescription: 'The Analytical Instrument Workshop provides hands-on training on modern analytical chemistry instruments. Participants learn operational principles, sample preparation, data acquisition, and interpretation techniques for various instruments including HPLC, GC-MS, NMR, and more. These workshops equip chemists with practical skills essential for academic research and industrial applications.',
-    image: '/src/assets/07.jpg',
+    image: '/images/07.jpg',
     color: 'purple',
     events: [
       {
@@ -147,7 +147,7 @@ const programsData: Record<string, Program> = {
     title: '21st Ghana Chemical Society Conference',
     description: 'The flagship annual gathering of chemists from Ghana and beyond, featuring presentations, posters, and networking opportunities.',
     longDescription: 'The 21st Ghana Chemical Society Conference is our premier event that brings together chemists, researchers, educators, and industry professionals from across Ghana and beyond. This multi-day conference features keynote presentations from leading experts, parallel sessions for research presentations, poster exhibitions, workshops, and ample networking opportunities. The conference serves as a platform for sharing cutting-edge research, discussing emerging trends in chemistry, and fostering collaborations that advance the chemical sciences in Ghana.',
-    image: '/src/assets/GCS Conference/Landscape GCS conference design.jpg',
+    image: '/images/GCS_Conference/Landscape GCS conference design.jpg',
     color: 'red',
     events: [
       {
@@ -168,26 +168,26 @@ const programsData: Record<string, Program> = {
       { name: 'Dr. Sarah Addo', title: 'Program Director', institution: 'Ghana Chemical Society' }
     ],
     sponsors: [
-      { name: "Ghana Standard Authority", logo: "/src/assets/GCS Conference/Sponsors/Ghana Standard Authority.png" },
-      { name: "Environmental Protection Agency", logo: "/src/assets/GCS Conference/Sponsors/Environmental Protection Agency - EPA.png" },
-      { name: "University of Energy and Natural Resources", logo: "/src/assets/GCS Conference/Sponsors/University of Energy and Natural Resources - UENR.webp" },
-      { name: "University of Health and Allied Science", logo: "/src/assets/GCS Conference/Sponsors/University of Health and Allied Science - UHAS.png" },
-      { name: "Food and Drugs Authority", logo: "/src/assets/GCS Conference/Sponsors/Food and Drugs Authority - FDA.png" },
-      { name: "Ghana Students Chemical Society", logo: "/src/assets/GCS Conference/Sponsors/Ghana Students Chemical Society.jpg" },
-      { name: "Kwame Nkrumah University of Science and Technology", logo: "/src/assets/GCS Conference/Sponsors/Kwame Nkrumah University of Science and Technology - KNUST.jpg" },
-      { name: "University of Cape Coast", logo: "/src/assets/GCS Conference/Sponsors/University of Cape Coast.jpg" },
-      { name: "C K Tedam University of Technology & Applied Science", logo: "/src/assets/GCS Conference/Sponsors/C K Tedam University of Technology & Applied Science - CKTUTAS.jpg" },
-      { name: "University of Ghana", logo: "/src/assets/GCS Conference/Sponsors/University of Ghana - UG.jpg" },
-      { name: "Ghana Water Company Limited", logo: "/src/assets/GCS Conference/Sponsors/Ghana Water Company Limited - GWCL.jpg" },
-      { name: "University of Winneba", logo: "/src/assets/GCS Conference/Sponsors/University of Winneba - UEW.jpg" },
-      { name: "Koforidua Technical University", logo: "/src/assets/GCS Conference/Sponsors/Koforidua Technical University - KTU.png" }
+      { name: "Ghana Standard Authority", logo: "/images/GCS_Conference/Sponsors/Ghana Standard Authority.png" },
+      { name: "Environmental Protection Agency", logo: "/images/GCS_Conference/Sponsors/Environmental Protection Agency - EPA.png" },
+      { name: "University of Energy and Natural Resources", logo: "/images/GCS_Conference/Sponsors/University of Energy and Natural Resources - UENR.webp" },
+      { name: "University of Health and Allied Science", logo: "/images/GCS_Conference/Sponsors/University of Health and Allied Science - UHAS.png" },
+      { name: "Food and Drugs Authority", logo: "/images/GCS_Conference/Sponsors/Food and Drugs Authority - FDA.png" },
+      { name: "Ghana Students Chemical Society", logo: "/images/GCS_Conference/Sponsors/Ghana Students Chemical Society.jpg" },
+      { name: "Kwame Nkrumah University of Science and Technology", logo: "/images/GCS_Conference/Sponsors/Kwame Nkrumah University of Science and Technology - KNUST.jpg" },
+      { name: "University of Cape Coast", logo: "/images/GCS_Conference/Sponsors/University of Cape Coast.jpg" },
+      { name: "C K Tedam University of Technology & Applied Science", logo: "/images/GCS_Conference/Sponsors/C K Tedam University of Technology & Applied Science - CKTUTAS.jpg" },
+      { name: "University of Ghana", logo: "/images/GCS_Conference/Sponsors/University of Ghana - UG.jpg" },
+      { name: "Ghana Water Company Limited", logo: "/images/GCS_Conference/Sponsors/Ghana Water Company Limited - GWCL.jpg" },
+      { name: "University of Winneba", logo: "/images/GCS_Conference/Sponsors/University of Winneba - UEW.jpg" },
+      { name: "Koforidua Technical University", logo: "/images/GCS_Conference/Sponsors/Koforidua Technical University - KTU.png" }
     ]
   },
   'chemistry-olympiad': {
     title: 'Chemistry Olympiad',
     description: 'A national competition for high school students to showcase their chemistry knowledge and skills.',
     longDescription: 'The Ghana Chemistry Olympiad is an annual competition designed to identify, nurture, and celebrate exceptional chemistry talent among high school students. The program includes regional competitions leading to a national final, where students demonstrate their theoretical knowledge and practical skills in chemistry. Winners have the opportunity to represent Ghana at the International Chemistry Olympiad. The program aims to inspire young minds, promote excellence in chemistry education, and build a pipeline of future chemistry leaders.',
-    image: '/src/assets/07.jpg',
+    image: '/images/07.jpg',
     color: 'yellow',
     events: [
       {
@@ -206,7 +206,7 @@ const programsData: Record<string, Program> = {
     title: 'Industry-Academia Bridge',
     description: 'A program fostering collaboration between academic institutions and chemical industries in Ghana.',
     longDescription: 'The Industry-Academia Bridge program facilitates meaningful collaboration between academic institutions and chemical industries in Ghana. Through structured partnerships, joint research projects, and knowledge exchange initiatives, we aim to bridge the gap between theoretical knowledge and practical industrial applications. The program includes industry visits, collaborative research projects, internship opportunities, and joint workshops. By strengthening these connections, we enhance the relevance of academic research and support the growth of Ghana\'s chemical industry.',
-    image: '/src/assets/08.png',
+    image: '/images/08.png',
     color: 'indigo',
     events: [
       {
@@ -231,7 +231,7 @@ const programsData: Record<string, Program> = {
     title: 'Internship Opportunities',
     description: 'A program connecting chemistry students and graduates with valuable internship opportunities in research institutions and industries.',
     longDescription: 'The GCS Internship Opportunities program serves as a bridge between talented chemistry students/graduates and leading research institutions, chemical industries, and laboratories across Ghana. Through strategic partnerships with academic institutions and industry leaders, we facilitate meaningful internship placements that provide hands-on experience, professional development, and potential career pathways. The program aims to enhance practical skills, build professional networks, and prepare the next generation of chemists for successful careers in both academia and industry.',
-    image: '/src/assets/07.jpg',
+    image: '/images/07.jpg',
     color: 'teal',
     events: [
       {
@@ -256,7 +256,7 @@ const programsData: Record<string, Program> = {
     title: 'GCS Poster Festival',
     description: 'An annual showcase of research posters from chemistry students and researchers across Ghana.',
     longDescription: 'The GCS Poster Festival is a vibrant celebration of chemical research and innovation in Ghana. This annual event provides a platform for undergraduate and graduate students, as well as early-career researchers, to present their work through poster presentations. The festival fosters scientific communication skills, encourages networking among researchers, and showcases the diverse research being conducted in Ghana\'s chemistry community. Participants receive valuable feedback from established researchers and have the opportunity to win awards for outstanding presentations.',
-    image: '/src/assets/08.png',
+    image: '/images/08.png',
     color: 'pink',
     events: [
       {

@@ -11,7 +11,7 @@ export const upcomingEvents: Event[] = [
     type: 'Conference',
     attendees: 500,
     organizers: 'Ghana Chemical Society',
-    image: '/src/assets/GCS Conference/Wide conference flyer.jpg',
+    image: '/images/GCS_Conference/Wide conference flyer.jpg',
     registrationLink: 'https://forms.gle/your-registration-form'
   },
   {
@@ -23,7 +23,7 @@ export const upcomingEvents: Event[] = [
     type: 'Workshop',
     attendees: 80,
     organizers: 'Ghana Chemical Society',
-    image: '/src/assets/03.jpg'
+    image: '/images/03.jpg'
   },
   {
     name: 'Networking Mixer',
@@ -34,7 +34,7 @@ export const upcomingEvents: Event[] = [
     type: 'Networking',
     attendees: 120,
     organizers: 'Ghana Chemical Society',
-    image: '/src/assets/06.jpg'
+    image: '/images/06.jpg'
   },
   {
     name: 'Chemistry Career Fair',
@@ -45,7 +45,7 @@ export const upcomingEvents: Event[] = [
     type: 'Career Fair',
     attendees: 200,
     organizers: 'Ghana Chemical Society',
-    image: '/src/assets/04.png'
+    image: '/images/04.png'
   },
   {
     name: 'Research Showcase',
@@ -56,7 +56,7 @@ export const upcomingEvents: Event[] = [
     type: 'Research',
     attendees: 100,
     organizers: 'Ghana Chemical Society',
-    image: '/src/assets/05.png'
+    image: '/images/05.png'
   },
   {
     name: 'Chemistry Quiz Competition',
@@ -67,9 +67,9 @@ export const upcomingEvents: Event[] = [
     type: 'Competition',
     attendees: 50,
     organizers: 'Ghana Chemical Society',
-    image: '/src/assets/08.png'
+    image: '/images/08.png'
   }
 ];
 
 // Default event image to use as fallback
-export const DEFAULT_EVENT_IMAGE = '/src/assets/07.jpg'; 
+export const DEFAULT_EVENT_IMAGE = '/images/07.jpg'; 

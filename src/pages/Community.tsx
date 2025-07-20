@@ -18,7 +18,7 @@ const Community = () => {
       <div className="relative h-screen">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-          src="/src/assets/community network.png" 
+          src="/images/community network.png" 
           alt="Community Network" 
           className="absolute inset-0 w-full h-full object-cover"
         />

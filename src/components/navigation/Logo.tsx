@@ -6,7 +6,7 @@ const Logo: React.FC = () => {
     <Link to="/" className="flex items-center gap-4">
       <div className="h-28 w-28 rounded-full border border-white overflow-hidden flex items-center justify-center bg-white">
         <img 
-          src="/src/assets/Logo.png" 
+          src="/images/Logo.png" 
           alt="Ghana Chemical Society Logo" 
           className="h-26 w-26 object-contain"
         />

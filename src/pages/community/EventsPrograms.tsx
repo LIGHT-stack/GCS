@@ -11,49 +11,49 @@ const programs = [
     id: 'instrument-connect',
     title: 'Instrument Connect',
     description: 'A program connecting researchers with analytical instruments across institutions in Ghana, promoting resource sharing and collaborative research.',
-    image: '/src/assets/01.png',
+    image: '/images/01.png',
     color: 'bg-blue-500'
   },
   {
     id: 'expert-view-podcast',
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
-    image: '/src/assets/Expert View Podcast/expert view logo.png',
+    image: '/images/Expert_View_Podcast/expert view logo.png',
     color: 'bg-orange-500'
   },
   {
     id: 'time-with-researcher',
     title: 'Time with the Researcher',
     description: 'Interactive sessions connecting students with established researchers to provide mentorship and career guidance.',
-    image: '/src/assets/03.jpg',
+    image: '/images/03.jpg',
     color: 'bg-green-500'
   },
   {
     id: 'analytical-instrument-workshop',
     title: 'Analytical Instrument Workshop',
     description: 'Hands-on training on modern analytical chemistry instruments.',
-    image: '/src/assets/01.png',
+    image: '/images/01.png',
     color: 'bg-purple-500'
   },
   {
     id: 'annual-conference',
     title: 'Annual Conference',
     description: 'The flagship annual gathering of chemists from Ghana and beyond, featuring presentations, posters, and networking opportunities.',
-    image: '/src/assets/04.png',
+    image: '/images/04.png',
     color: 'bg-red-500'
   },
   {
     id: 'internship-opportunities',
     title: 'Internship Opportunities',
     description: 'Connecting students with industry partners for practical experience and professional development.',
-    image: '/src/assets/05.png',
+    image: '/images/05.png',
     color: 'bg-teal-500'
   },
   {
     id: 'gcs-poster-festival',
     title: 'GCS Poster Festival',
     description: 'A showcase of research posters from students and early-career researchers across Ghana.',
-    image: '/src/assets/02.png',
+    image: '/images/02.png',
     color: 'bg-indigo-500'
   }
 ];
@@ -70,7 +70,7 @@ const EventsPrograms = () => {
       <div className="relative h-[60vh] min-h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-          src="/src/assets/06.jpg" 
+          src="/images/06.jpg" 
           alt="Events and Programs" 
           className="absolute inset-0 w-full h-full object-cover"
         />

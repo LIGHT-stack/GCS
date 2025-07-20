@@ -16,28 +16,28 @@ const LeadershipSection = () => {
       position: "National President",
       institution: "Department of Chemistry, Kwame Nkrumah University of Science and Technology",
       bio: "Professor in the Department of Chemistry at KNUST with extensive experience in research and academic leadership.",
-      image: "/src/assets/Prof Kwesi Acheampong.jpg"
+      image: "/images/Prof Kwesi Acheampong.jpg"
     },
     {
       name: "Dr. Michael Baah Mensah",
       position: "National Secretary",
       institution: "Department of Chemistry, Kwame Nkrumah University of Science and Technology",
       bio: "Dedicated professional with expertise in organizational management and scientific communication. Lecturer at the Department of Chemistry, KNUST.",
-      image: "/src/assets/Dr Michael Baah Mensah.jpg"
+      image: "/images/Dr Michael Baah Mensah.jpg"
     },
     {
       name: "Miss Janet Atebiya",
       position: "National Treasurer",
       institution: "Regional Water Quality Assurance Manager, GWCL, Sunyani",
       bio: "Specialist in water quality analysis and financial management with extensive experience in the public sector.",
-      image: "/src/assets/Janet Atebiya.jpg"
+      image: "/images/Janet Atebiya.jpg"
     },
     {
       name: "Isaac Aidoo",
       position: "National Service Personnel",
       institution: "Department of Chemistry, KNUST",
       bio: "Supporting the activities and operations of the Ghana Chemical Society.",
-      image: "/src/assets/Isaac Aidoo.jpg"
+      image: "/images/Isaac Aidoo.jpg"
     }
   ];
 

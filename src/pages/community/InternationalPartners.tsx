@@ -20,7 +20,7 @@ const InternationalPartners = () => {
       <div className="relative h-[60vh] min-h-[500px]">
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40 z-10" />
         <img 
-          src="/src/assets/globe ghana.png" 
+          src="/images/globe ghana.png" 
           alt="International Partnerships" 
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -83,7 +83,7 @@ const InternationalPartners = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
                   <img 
-                    src="/src/assets/International Partners/Royal Society of Chemistry - RSC.jpg" 
+                    src="/images/International_Partners/Royal Society of Chemistry - RSC.jpg" 
                     alt="Royal Society of Chemistry"
                     className="w-full h-full object-contain"
                   />
@@ -109,7 +109,7 @@ const InternationalPartners = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
                   <img 
-                    src="/src/assets/International Partners/Federation of African Societies of Chemistry - FASC.jpg" 
+                    src="/images/International_Partners/Federation of African Societies of Chemistry - FASC.jpg" 
                     alt="Federation of African Societies of Chemistry"
                     className="w-full h-full object-contain"
                   />
@@ -135,7 +135,7 @@ const InternationalPartners = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
                   <img 
-                    src="/src/assets/International Partners/Commonwealth Chemistry.jpg" 
+                    src="/images/International_Partners/Commonwealth Chemistry.jpg" 
                     alt="Commonwealth Chemistry"
                     className="w-full h-full object-contain"
                   />

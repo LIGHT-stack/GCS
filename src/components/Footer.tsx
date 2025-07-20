@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             <div className="flex items-center mb-4">
               <div className="h-16 w-16 rounded-full border border-white overflow-hidden flex items-center justify-center bg-white mr-3">
                 <img 
-                  src="/src/assets/Logo.png" 
+                  src="/images/Logo.png" 
                   alt="Ghana Chemical Society Logo" 
                   className="h-14 w-14 object-contain"
                 />
