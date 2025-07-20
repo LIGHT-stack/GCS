@@ -13,19 +13,19 @@ const InternationalPartners = () => {
   const partners = [
     {
       name: "Federation of African Societies of Chemistry (FASC)",
-      logo: "/images/International_Partners/Federation of African Societies of Chemistry - FASC.jpg",
+      logo: "/images/International Partners/Federation of African Societies of Chemistry - FASC.jpg",
       description: "A continental organization representing chemical societies across Africa, promoting collaboration and advancement of chemistry in the region.",
       website: "https://www.fasc-africa.org"
     },
     {
       name: "Royal Society of Chemistry (RSC)",
-      logo: "/images/International_Partners/Royal Society of Chemistry - RSC.jpg",
+      logo: "/images/International Partners/Royal Society of Chemistry - RSC.jpg",
       description: "The world's leading chemistry community, advancing excellence in the chemical sciences.",
       website: "https://www.rsc.org"
     },
     {
       name: "Commonwealth Chemistry",
-      logo: "/images/International_Partners/Commonwealth Chemistry.jpg",
+      logo: "/images/International Partners/Commonwealth Chemistry.jpg",
       description: "A network of chemical societies and institutions across the Commonwealth, fostering international collaboration in chemical sciences.",
       website: "https://www.commonwealthchemistry.org"
     }

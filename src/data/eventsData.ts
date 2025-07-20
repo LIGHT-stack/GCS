@@ -42,7 +42,7 @@ const eventsData: Record<string, EventData> = {
     endDate: "2025-10-03",
     location: "KNUST, Kumasi",
     time: "9:00 AM - 5:00 PM",
-    image: "/images/GCS_Conference/Wide conference flyer.jpg",
+    image: "/images/GCS Conference/Wide conference flyer.jpg",
     type: "conference",
     attendees: 500,
     organizers: "Ghana Chemical Society",
@@ -116,19 +116,19 @@ const eventsData: Record<string, EventData> = {
       { name: "Prof. Sarah Owusu", title: "Department Chair", institution: "KNUST", topic: "Catalysis and Energy Efficiency" }
     ],
     partners: [
-      { name: "Ghana Standard Authority", logo: "/images/GCS_Conference/Sponsors/Ghana Standard Authority.png" },
-      { name: "Environmental Protection Agency", logo: "/images/GCS_Conference/Sponsors/Environmental Protection Agency - EPA.png" },
-      { name: "University of Energy and Natural Resources", logo: "/images/GCS_Conference/Sponsors/University of Energy and Natural Resources - UENR.webp" },
-      { name: "University of Health and Allied Science", logo: "/images/GCS_Conference/Sponsors/University of Health and Allied Science - UHAS.png" },
-      { name: "Food and Drugs Authority", logo: "/images/GCS_Conference/Sponsors/Food and Drugs Authority - FDA.png" },
-      { name: "Ghana Students Chemical Society", logo: "/images/GCS_Conference/Sponsors/Ghana Students Chemical Society.jpg" },
-      { name: "Kwame Nkrumah University of Science and Technology", logo: "/images/GCS_Conference/Sponsors/Kwame Nkrumah University of Science and Technology - KNUST.jpg" },
-      { name: "University of Cape Coast", logo: "/images/GCS_Conference/Sponsors/University of Cape Coast.jpg" },
-      { name: "C K Tedam University of Technology & Applied Science", logo: "/images/GCS_Conference/Sponsors/C K Tedam University of Technology & Applied Science - CKTUTAS.jpg" },
-      { name: "University of Ghana", logo: "/images/GCS_Conference/Sponsors/University of Ghana - UG.jpg" },
-      { name: "Ghana Water Company Limited", logo: "/images/GCS_Conference/Sponsors/Ghana Water Company Limited - GWCL.jpg" },
-      { name: "University of Winneba", logo: "/images/GCS_Conference/Sponsors/University of Winneba - UEW.jpg" },
-      { name: "Koforidua Technical University", logo: "/images/GCS_Conference/Sponsors/Koforidua Technical University - KTU.png" }
+      { name: "Ghana Standard Authority", logo: "/images/GCS Conference/Sponsors/Ghana Standard Authority.png" },
+      { name: "Environmental Protection Agency", logo: "/images/GCS Conference/Sponsors/Environmental Protection Agency - EPA.png" },
+      { name: "University of Energy and Natural Resources", logo: "/images/GCS Conference/Sponsors/University of Energy and Natural Resources - UENR.webp" },
+      { name: "University of Health and Allied Science", logo: "/images/GCS Conference/Sponsors/University of Health and Allied Science - UHAS.png" },
+      { name: "Food and Drugs Authority", logo: "/images/GCS Conference/Sponsors/Food and Drugs Authority - FDA.png" },
+      { name: "Ghana Students Chemical Society", logo: "/images/GCS Conference/Sponsors/Ghana Students Chemical Society.jpg" },
+      { name: "Kwame Nkrumah University of Science and Technology", logo: "/images/GCS Conference/Sponsors/Kwame Nkrumah University of Science and Technology - KNUST.jpg" },
+      { name: "University of Cape Coast", logo: "/images/GCS Conference/Sponsors/University of Cape Coast.jpg" },
+      { name: "C K Tedam University of Technology & Applied Science", logo: "/images/GCS Conference/Sponsors/C K Tedam University of Technology & Applied Science - CKTUTAS.jpg" },
+      { name: "University of Ghana", logo: "/images/GCS Conference/Sponsors/University of Ghana - UG.jpg" },
+      { name: "Ghana Water Company Limited", logo: "/images/GCS Conference/Sponsors/Ghana Water Company Limited - GWCL.jpg" },
+      { name: "University of Winneba", logo: "/images/GCS Conference/Sponsors/University of Winneba - UEW.jpg" },
+      { name: "Koforidua Technical University", logo: "/images/GCS Conference/Sponsors/Koforidua Technical University - KTU.png" }
     ]
   },
   "green-chemistry-workshop": {

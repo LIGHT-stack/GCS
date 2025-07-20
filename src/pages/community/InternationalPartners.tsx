@@ -83,7 +83,7 @@ const InternationalPartners = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
                   <img 
-                    src="/images/International_Partners/Royal Society of Chemistry - RSC.jpg" 
+                    src="/images/International Partners/Royal Society of Chemistry - RSC.jpg" 
                     alt="Royal Society of Chemistry"
                     className="w-full h-full object-contain"
                   />
@@ -109,7 +109,7 @@ const InternationalPartners = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
                   <img 
-                    src="/images/International_Partners/Federation of African Societies of Chemistry - FASC.jpg" 
+                    src="/images/International Partners/Federation of African Societies of Chemistry - FASC.jpg" 
                     alt="Federation of African Societies of Chemistry"
                     className="w-full h-full object-contain"
                   />
@@ -135,7 +135,7 @@ const InternationalPartners = () => {
               <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:border-gcs-blue/50 hover:shadow-xl transition-all">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden bg-gray-100">
                   <img 
-                    src="/images/International_Partners/Commonwealth Chemistry.jpg" 
+                    src="/images/International Partners/Commonwealth Chemistry.jpg" 
                     alt="Commonwealth Chemistry"
                     className="w-full h-full object-contain"
                   />

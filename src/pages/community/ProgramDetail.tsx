@@ -70,7 +70,7 @@ const programsData: Record<string, Program> = {
     title: 'Expert View Podcast',
     description: 'A podcast series featuring interviews with leading experts in chemistry and related fields from Ghana and around the world.',
     longDescription: 'The Expert View Podcast is a digital initiative that brings the insights and experiences of leading chemistry experts to a wider audience. Through in-depth interviews, we explore cutting-edge research, career journeys, educational pathways, and the societal impact of chemistry. The podcast serves as both an educational resource and a way to highlight the achievements of chemists from Ghana and beyond, inspiring the next generation of scientific talent.',
-    image: '/images/Expert_View_Podcast/expert view logo.png',
+    image: '/images/Expert View Podcast/expert view logo.png',
     color: 'orange',
     events: [
       {
@@ -78,14 +78,14 @@ const programsData: Record<string, Program> = {
         date: '2025-05-18',
         location: 'Virtual Event',
         description: 'Live recording with international experts in green chemistry.',
-        image: '/images/Expert_View_Podcast/EXPECT VIEW December.jpg'
+        image: '/images/Expert View Podcast/EXPECT VIEW December.jpg'
       },
       {
         title: 'Podcast Launch Event',
         date: '2025-04-30',
         location: 'Ghana Academy of Arts and Sciences, Accra',
         description: 'Official launch of Season 3 of the Expert View Podcast.',
-        image: '/images/Expert_View_Podcast/EXPECT VIEW December.jpg'
+        image: '/images/Expert View Podcast/EXPECT VIEW December.jpg'
       }
     ],
     coordinators: [
@@ -147,7 +147,7 @@ const programsData: Record<string, Program> = {
     title: '21st Ghana Chemical Society Conference',
     description: 'The flagship annual gathering of chemists from Ghana and beyond, featuring presentations, posters, and networking opportunities.',
     longDescription: 'The 21st Ghana Chemical Society Conference is our premier event that brings together chemists, researchers, educators, and industry professionals from across Ghana and beyond. This multi-day conference features keynote presentations from leading experts, parallel sessions for research presentations, poster exhibitions, workshops, and ample networking opportunities. The conference serves as a platform for sharing cutting-edge research, discussing emerging trends in chemistry, and fostering collaborations that advance the chemical sciences in Ghana.',
-    image: '/images/GCS_Conference/Landscape GCS conference design.jpg',
+    image: '/images/GCS Conference/Landscape GCS conference design.jpg',
     color: 'red',
     events: [
       {
@@ -168,19 +168,19 @@ const programsData: Record<string, Program> = {
       { name: 'Dr. Sarah Addo', title: 'Program Director', institution: 'Ghana Chemical Society' }
     ],
     sponsors: [
-      { name: "Ghana Standard Authority", logo: "/images/GCS_Conference/Sponsors/Ghana Standard Authority.png" },
-      { name: "Environmental Protection Agency", logo: "/images/GCS_Conference/Sponsors/Environmental Protection Agency - EPA.png" },
-      { name: "University of Energy and Natural Resources", logo: "/images/GCS_Conference/Sponsors/University of Energy and Natural Resources - UENR.webp" },
-      { name: "University of Health and Allied Science", logo: "/images/GCS_Conference/Sponsors/University of Health and Allied Science - UHAS.png" },
-      { name: "Food and Drugs Authority", logo: "/images/GCS_Conference/Sponsors/Food and Drugs Authority - FDA.png" },
-      { name: "Ghana Students Chemical Society", logo: "/images/GCS_Conference/Sponsors/Ghana Students Chemical Society.jpg" },
-      { name: "Kwame Nkrumah University of Science and Technology", logo: "/images/GCS_Conference/Sponsors/Kwame Nkrumah University of Science and Technology - KNUST.jpg" },
-      { name: "University of Cape Coast", logo: "/images/GCS_Conference/Sponsors/University of Cape Coast.jpg" },
-      { name: "C K Tedam University of Technology & Applied Science", logo: "/images/GCS_Conference/Sponsors/C K Tedam University of Technology & Applied Science - CKTUTAS.jpg" },
-      { name: "University of Ghana", logo: "/images/GCS_Conference/Sponsors/University of Ghana - UG.jpg" },
-      { name: "Ghana Water Company Limited", logo: "/images/GCS_Conference/Sponsors/Ghana Water Company Limited - GWCL.jpg" },
-      { name: "University of Winneba", logo: "/images/GCS_Conference/Sponsors/University of Winneba - UEW.jpg" },
-      { name: "Koforidua Technical University", logo: "/images/GCS_Conference/Sponsors/Koforidua Technical University - KTU.png" }
+      { name: "Ghana Standard Authority", logo: "/images/GCS Conference/Sponsors/Ghana Standard Authority.png" },
+      { name: "Environmental Protection Agency", logo: "/images/GCS Conference/Sponsors/Environmental Protection Agency - EPA.png" },
+      { name: "University of Energy and Natural Resources", logo: "/images/GCS Conference/Sponsors/University of Energy and Natural Resources - UENR.webp" },
+      { name: "University of Health and Allied Science", logo: "/images/GCS Conference/Sponsors/University of Health and Allied Science - UHAS.png" },
+      { name: "Food and Drugs Authority", logo: "/images/GCS Conference/Sponsors/Food and Drugs Authority - FDA.png" },
+      { name: "Ghana Students Chemical Society", logo: "/images/GCS Conference/Sponsors/Ghana Students Chemical Society.jpg" },
+      { name: "Kwame Nkrumah University of Science and Technology", logo: "/images/GCS Conference/Sponsors/Kwame Nkrumah University of Science and Technology - KNUST.jpg" },
+      { name: "University of Cape Coast", logo: "/images/GCS Conference/Sponsors/University of Cape Coast.jpg" },
+      { name: "C K Tedam University of Technology & Applied Science", logo: "/images/GCS Conference/Sponsors/C K Tedam University of Technology & Applied Science - CKTUTAS.jpg" },
+      { name: "University of Ghana", logo: "/images/GCS Conference/Sponsors/University of Ghana - UG.jpg" },
+      { name: "Ghana Water Company Limited", logo: "/images/GCS Conference/Sponsors/Ghana Water Company Limited - GWCL.jpg" },
+      { name: "University of Winneba", logo: "/images/GCS Conference/Sponsors/University of Winneba - UEW.jpg" },
+      { name: "Koforidua Technical University", logo: "/images/GCS Conference/Sponsors/Koforidua Technical University - KTU.png" }
     ]
   },
   'chemistry-olympiad': {

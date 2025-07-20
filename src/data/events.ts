@@ -11,7 +11,7 @@ export const upcomingEvents: Event[] = [
     type: 'Conference',
     attendees: 500,
     organizers: 'Ghana Chemical Society',
-    image: '/images/GCS_Conference/Wide conference flyer.jpg',
+    image: '/images/GCS Conference/Wide conference flyer.jpg',
     registrationLink: 'https://forms.gle/your-registration-form'
   },
   {
